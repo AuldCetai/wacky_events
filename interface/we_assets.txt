@@ -1,0 +1,13 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_we_event_001"
+		texturefile = "gfx/event_pictures/event_001.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_event_002"
+		texturefile = "gfx/event_pictures/event_002.dds"
+		transparencecheck = yes
+	}
+}

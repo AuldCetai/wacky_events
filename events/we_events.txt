@@ -1,0 +1,60 @@
+namespace = we
+
+#Wackiness selector event
+country_event = {
+	id = we.001 
+	title = we.001.t 
+	desc = we.001.d
+	picture = GFX_we_event_001
+	fire_only_once = yes
+	trigger = { always = yes }
+			  
+	option = {	
+				#activate T1 events
+				name = "we.001.a"
+				custom_tooltip = we.001.att
+				set_global_flag = we_vanilla_plus
+			}
+			
+	option = {	
+				#activate T2 events
+				name = "we.001.b"
+				custom_tooltip = we.001.btt
+				set_global_flag = we_occasional_mystery
+			}
+
+	option = {
+				#activate T3 events
+				name = "we.001.c"
+				custom_tooltip = we.001.ctt
+				set_global_flag = we_here_be_dragons
+			}			
+}
+
+
+
+#the Ottomans attack - T3 event
+country_event = {
+	id = we.002 
+	title = we.002.t 
+	desc = we.002.d
+	picture = GFX_we_event_002
+	fire_only_once = yes
+	mean_time_to_happen = { months = 5000 }
+	trigger = {
+				owns = 236
+				is_in_war = {attackers = TUR}
+				NOT = {alliance_with = TUR}
+				has_global_flag = we_here_be_dragons
+			  }
+			  
+	option = {
+				name = "we.002.a"
+				236 = {
+					spawn_rebels = {
+					size = 3
+					type = janissary_rebels
+					}
+				}
+			}
+}
