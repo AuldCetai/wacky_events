@@ -1,4 +1,5 @@
 spriteTypes = {
+	#events
 	spriteType = {
 		name = "GFX_we_event_001"
 		texturefile = "gfx/event_pictures/event_001.dds"
@@ -13,6 +14,24 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_we_event_005"
+		texturefile = "gfx/event_pictures/event_005.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_event_008"
+		texturefile = "gfx/event_pictures/event_005.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_event_009"
+		texturefile = "gfx/event_pictures/event_005.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_event_011"
 		texturefile = "gfx/event_pictures/event_005.dds"
 		transparencecheck = yes
 	}
