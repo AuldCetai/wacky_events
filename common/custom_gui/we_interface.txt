@@ -1,0 +1,19 @@
+custom_window = {
+	name = we_menu_window
+	potential = { always = yes}
+}
+
+#WE open menu button
+custom_button = {
+	name = we_open_menu_button
+    potential = {} 
+  	trigger = { 
+		hidden_trigger = {
+			NOT = {has_country_flag = we_menu_is_open_already_silly} }
+		}
+  	effect = { 
+		hidden_effect = {
+			set_country_flag = we_menu_is_open_already_silly
+			}
+	}
+}

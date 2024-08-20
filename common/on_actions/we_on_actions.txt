@@ -1,4 +1,4 @@
-on_startup = {
+﻿on_startup = {
 			events = {  
 						we.001
 						}

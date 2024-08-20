@@ -6,3 +6,4 @@ tags={
 }
 name="Wacky Events"
 supported_version="v1.37.2.0"
+path="C:/Users/Szalámi/Documents/Paradox Interactive/Europa Universalis IV/mod/wacky_events"

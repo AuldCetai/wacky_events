@@ -7,6 +7,7 @@ country_event = {
 	desc = we.001.d
 	picture = GFX_we_event_001
 	fire_only_once = yes
+	is_triggered_only = yes
 	trigger = { always = yes }
 			  
 	option = {	
@@ -33,7 +34,7 @@ country_event = {
 
 
 
-#the Ottomans attack - T3 event
+#the Ottomans attack 002 - T3 event
 country_event = {
 	id = we.002 
 	title = we.002.t 
@@ -57,4 +58,157 @@ country_event = {
 					}
 				}
 			}
+}
+
+#Wacky races 003 - T2 Event
+#Wacky races winner 004 - T2 Event followup to 003
+
+#Japanese discover Manga 005 - T2 Event
+country_event = {
+	id = we.005 
+	title = we.005.t 
+	desc = we.005.d
+	picture = GFX_we_event_005
+	fire_only_once = yes
+	mean_time_to_happen = { months = 5000 }
+	trigger = {
+				tag = JAP
+				has_global_flag = we_occasional_mystery
+				has_discovered = 2284
+			  }
+			  
+	option = {
+				name = "we.005.a" #SUGOI
+				1020 = { change_religion = shamanism }	
+			}
+	option = {
+				name = "we.005.b" #Nani the fck
+				add_prestige = 20			
+			}		
+}
+
+#My horse is a genius 006 - T3Event
+
+#An heir returns 007 - T1 Event
+country_event = {
+	id = we.007 
+	title = we.007.t 
+	desc = we.007.d
+	picture = GFX_we_event_007
+	is_triggered_only = yes
+	
+	trigger = {}
+			  
+	option = {
+				name = "we.007.a" #Oh joy!
+				kill_ruler = yes
+				define_ruler = {
+				name = global_event_target:we_ruler_rising
+				adm = 4
+				dip = 3
+				mil = 2
+				age = 17
+				dynasty = ROOT
+				}
+			}		
+}
+
+#An heir returns changed 008 - T2 Event
+country_event = {
+	id = we.008 
+	title = we.008.t 
+	desc = we.008.d
+	picture = GFX_we_event_008
+	is_triggered_only = yes
+	
+	trigger = {}
+			  
+	option = {
+				name = "we.008.a" #Oh joy?!
+				kill_ruler = yes
+				define_ruler = {
+				name = "global_event_target:we_ruler_rising"
+				age = 25
+				dynasty = ROOT
+				female = yes
+				}
+			}		
+}
+
+
+#An heir returns zombified 009 - T2 Event
+country_event = {
+	id = we.009 
+	title = we.009.t 
+	desc = we.009.d
+	picture = GFX_we_event_009
+	is_triggered_only = yes
+	
+	trigger = {}
+			  
+	option = {
+				name = "we.009.a" #Oh.... what the heck is that?!
+				kill_ruler = yes
+				define_ruler = {
+					name = global_event_target:we_ruler_rising
+					age = 25
+					dynasty = ROOT
+					adm = 0
+					dip = 0
+					mil = 0	
+				}
+				add_heir_personality = babbling_buffoon_personality
+			}		
+}
+
+# Hunting accident alter 011 - T1 Event
+country_event = {
+	id = we.011
+	title = we.011.t
+	desc = we.011.d
+	picture = GFX_we_event_011
+	
+	trigger = {
+		has_heir = yes
+		heir_age = 15
+		is_lesser_in_union = no
+		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = polish_elective_monarchy }
+		NOT = { has_country_flag = no_more_hunting_for_heir }
+		NOT = { ruler_has_personality = babbling_buffoon_personality }
+	}
+	mean_time_to_happen = {
+		months = 5000
+	}
+	option = {
+		name = "we.011.a"
+		kill_ruler = {}
+		add_stability = -1
+	}
+	option = {
+		name = "we.011.b"
+		ruler = { name = { save_global_event_target_as = we_ruler_rising } }
+		kill_ruler = yes
+		add_prestige = -25
+		hidden_effect = {
+			random_list = {
+				25	= {	
+							ROOT = {country_event = { id = we.007 days = 30 }}
+						}
+				25	= {	
+						IF = {
+							limit = { has_global_flag = we_occasional_mystery }
+							ROOT = {country_event = { id = we.008 days = 30 }}
+							}
+						}		
+				25	= {	
+						IF = {
+							limit = { has_global_flag = we_here_be_dragons }
+							ROOT = {country_event = { id = we.009 days = 30 }}
+							}
+						}
+				25 = {}
+				}
+		}
+	}
 }
