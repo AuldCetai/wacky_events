@@ -104,7 +104,7 @@ country_event = {
 			  
 	option = {
 				name = "we.008.a" #Oh joy?!
-				define_ruler = {
+				define_heir = {
 				name = "Loretta"
 				age = 25
 				dynasty = ROOT
@@ -127,16 +127,17 @@ country_event = {
 			  
 	option = {
 				name = "we.009.a" #Oh.... what the heck is that?!
-				define_ruler = {
+				define_heir = {
 					name = "beaurghhh"
 					age = 25
 					dynasty = ROOT
 					adm = 0
 					dip = 0
 					mil = 0	
+					block_disinherit = yes
 				}
 				add_heir_personality = babbling_buffoon_personality
-				block_disinherit = yes
+				
 			}	
 	after = {
 		clear_saved_name = we_heir
@@ -173,7 +174,6 @@ country_event = {
 	}
 	option = {
 		name = "we.011.b"
-		set_country_flag = previous_heir_name_@heir_name
 		kill_heir = {}
 		add_prestige = -25
 		hidden_effect = {

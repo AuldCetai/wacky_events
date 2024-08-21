@@ -42,4 +42,19 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	
+	spriteType = {
+		name = "GFX_we_menu_bg"
+		texturefile = "gfx/interface/we_menu_bg.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_wackiness_selector"
+		texturefile = "gfx/interface/we_wackiness_selector.dds"
+		transparencecheck = yes
+		noOfFrames = 3
+	}
+	
+	
+	
 }

@@ -15,15 +15,15 @@ guiTypes = {
 		hide_position = { x = 0 y = -165 }
 		animation_type = "decelerated"
 		animation_time = 600
-
-
+		
+		
 		iconType = {
 			name = "brown_bg"
 			spriteType ="GFX_brown_bg"
 			position = { x= 676 y = 20 }
 			alwaystransparent = yes
 		}
-
+		
 
 		iconType =
 		{
@@ -110,7 +110,7 @@ guiTypes = {
 			hint_tag = "hint_macrobuild"
 			shortcut = "b"
 		}
-
+		
 		iconType = {
 			name = "great_power_button_base"
 			quadTextureSprite ="GFX_great_power_button_base"
@@ -144,33 +144,9 @@ guiTypes = {
 			buttonFont = "Main_14_black"
 			clicksound = macro_build
 		}
-		windowType = {
-			name = "we_menu_window"
-			backGround=""
-			position = { x=0 y=0 }
-			size = { x=54 y=54 }
-			dontRender = ""
-			horizontalBorder= ""
-			verticalBorder= ""
-			fullScreen = no
-			moveable = 0
-			Orientation = "UPPER_LEFT"
-			scripted = yes
-			
-			
-			## WE OPEN MENU BUTTON
-			guiButtonType = {
-					name = "we_open_menu_button"
-					position = { x =-9 y =70 }
-					quadTextureSprite ="GFX_we_menu_open_button"
-					scripted = yes
-					Orientation = "LOWER_RIGHT"
-			}
-		}
 
 	######### top bar portraits ###########
-
-
+		
 		guiButtonType =
 		{
 			name ="icon_merchant"
@@ -207,6 +183,8 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			hint_tag = "hint_missionary"
 		}
+		
+		
 
 	##########################################
 
@@ -274,7 +252,8 @@ guiTypes = {
 
 
 	###########  top bar icons and values #############
-
+		
+		
 		iconType =
 		{
 			name ="icon_gold"
@@ -580,9 +559,6 @@ guiTypes = {
 
 	############### Power mechanics for a country ################
 
-
-
-
 		iconType =
 		{
 			name ="icon_corruption"
@@ -694,11 +670,7 @@ guiTypes = {
 			format = left
 			alwaystransparent = yes
 		}
-
-
-
-
-
+		
 
 	#################################################
 
@@ -715,7 +687,9 @@ guiTypes = {
 			maxHeight = 32
 			fixedsize = yes
 		}
-
+		
+		
+		
 
 	############### DATE PANEL ###################
 
@@ -754,8 +728,117 @@ guiTypes = {
 				maxHeight = 32
 				format = center
 			}
+			
+			
+			
 		}
-		# Piano:
+		
+		
+		windowType = {
+			name = "we_menu_window_button"
+			backGround=""
+			position = { x=-203 y= 100 }
+			size = { x=406 y=70 }
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			moveable = 0
+			Orientation = "CENTER_UP"
+			scripted = yes
+			
+			
+			## WE OPEN MENU BUTTON
+			guiButtonType = {
+					name = "we_open_menu_button"
+					position = { x = -1115 y = -45 }
+					quadTextureSprite ="GFX_we_menu_open_button"
+					scripted = yes
+					Orientation = "LOWER_RIGHT"
+					scale = 1.2
+			}
+		}
+		
+		windowType = {
+			name = "we_menu_window"
+			backGround=""
+			position = { x=-203 y= 100 }
+			size = { x=406 y=70 }
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			moveable = 0
+			Orientation = "CENTER_UP"
+			scripted = yes
+			
+				iconType ={
+					name ="we_menu_bg"
+					spriteType = "GFX_we_menu_bg"
+					position = { x = -100 y = 50 }
+					Orientation = "UPPER_LEFT"
+				}
+			
+			## WE CLOSE MENU BUTTON
+				guiButtonType = {
+					name = "we_close_menu_button"
+					position = { x = 40 y = -25 }
+					quadTextureSprite ="GFX_closebutton2"
+					scripted = yes
+					Orientation = "LOWER_RIGHT"
+					scale = 1.2
+				}
+			
+			## WE Wackiness selector button
+				guiButtonType = {
+					name = "we_wackiness_selector"
+					position = { x = -300 y = 85 }
+					quadTextureSprite ="GFX_we_wackiness_selector"
+					scripted = yes
+					Orientation = "LOWER_RIGHT"
+					scale = 0.9
+				}
+				
+			## WE Wackiness frequency button
+				guiButtonType = {
+					name = "we_wackiness_frequency"
+					position = { x = -300 y = 180 }
+					quadTextureSprite ="GFX_we_wackiness_selector"
+					scripted = yes
+					Orientation = "LOWER_RIGHT"
+					scale = 0.9
+				}
+			## WE Wackiness piano opener
+				guiButtonType = {
+					name = "we_piano_opener"
+					position = { x = -100 y = 80 }
+					quadTextureSprite ="GFX_placeholder"
+					scripted = yes
+					Orientation = "LOWER_RIGHT"
+					scale = 1
+				}
+			## WE Wackiness animals world map
+				guiButtonType = {
+					name = "we_animals_of_the_world"
+					position = { x = -100 y = 180 }
+					quadTextureSprite ="GFX_placeholder"
+					scripted = yes
+					Orientation = "LOWER_RIGHT"
+					scale = 1
+				}
+			## WE Wackiness empty space for ideas
+				guiButtonType = {
+					name = "we_placeholder_for_menu"
+					position = { x = -100 y = 280 }
+					quadTextureSprite ="GFX_placeholder"
+					scripted = yes
+					Orientation = "LOWER_RIGHT"
+					scale = 1
+				}	
+			
+			}
+			
+				# Piano:
 		windowType = {
 			name = "we_piano_window"
 			backGround =""
@@ -788,6 +871,7 @@ guiTypes = {
 				#shortcut = "TODO"
 				scripted = yes
 			}
+			
 			guiButtonType = {
 				name = "we_white_key_3_button"
 				position = { x=137 y = 252}
@@ -1392,6 +1476,7 @@ guiTypes = {
 				scripted = yes
 			}
 		}
+		
 	} ### end of "topbar"
 
 	windowType = {
@@ -1436,5 +1521,7 @@ guiTypes = {
 			maxHeight = 60
 			format = centre
 		}
+		
+
 	}
 }
