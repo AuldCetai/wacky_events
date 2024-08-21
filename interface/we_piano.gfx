@@ -1,0 +1,51 @@
+spriteTypes = {
+	# Piano background:
+	spriteType = {
+		name = "GFX_we_piano_background"
+		texturefile = "gfx/whacky_interface/we_piano_background.dds"
+		loadType = "INGAME"
+	}
+	# Piano keys button:
+	spriteType = {
+		# 1
+		name = "GFX_we_piano_key_far_left"
+		texturefile = "gfx/whacky_interface/we_piano_key_far_left.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		# 3, 6, 10, 13, 17, 20, 24, 27, 31, 34, 38, 41, 45, 48
+		name = "GFX_we_piano_key_white_left"
+		texturefile = "gfx/whacky_interface/we_piano_key_white_left.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		# 4, 7, 8, 11, 14, 15, 18, 21, 22, 25, 28, 29, 32, 35, 36, 39, 42, 43, 46, 49, 50
+		name = "GFX_we_piano_key_white_mid"
+		texturefile = "gfx/whacky_interface/we_piano_key_white_mid.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		# 2, 5, 9, 12, 16, 19, 23, 26, 30, 33, 37, 40, 44, 47, 51
+		name = "GFX_we_piano_key_white_right"
+		texturefile = "gfx/whacky_interface/we_piano_key_white_right.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		# 1-36
+		name = "GFX_we_piano_key_black"
+		texturefile = "gfx/whacky_interface/we_piano_key_black.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		# 52
+		name = "GFX_we_piano_key_far_right"
+		texturefile = "gfx/whacky_interface/we_piano_key_far_right.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+}
