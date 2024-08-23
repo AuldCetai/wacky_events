@@ -1,0 +1,197 @@
+namespace = we
+
+#Wackiness selector event
+country_event = {
+	id = we.001 
+	title = we.001.t 
+	desc = we.001.d
+	picture = GFX_we_event_001
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = { always = yes }
+			  
+	option = {	
+				#activate T1 events
+				name = "we.001.a"
+				custom_tooltip = we.001.att
+				set_global_flag = we_vanilla_plus
+			}
+			
+	option = {	
+				#activate T2 events
+				name = "we.001.b"
+				custom_tooltip = we.001.btt
+				set_global_flag = we_occasional_mystery
+			}
+
+	option = {
+				#activate T3 events
+				name = "we.001.c"
+				custom_tooltip = we.001.ctt
+				set_global_flag = we_here_be_dragons
+			}			
+}
+
+
+
+#the Ottomans attack 002 - T3 event
+country_event = {
+	id = we.002 
+	title = we.002.t 
+	desc = we.002.d
+	picture = GFX_we_event_002
+	fire_only_once = yes
+	mean_time_to_happen = { months = 5000 }
+	trigger = {
+				owns = 236
+				is_in_war = {attackers = TUR}
+				NOT = {alliance_with = TUR}
+				has_global_flag = we_here_be_dragons
+			  }
+			  
+	option = {
+				name = "we.002.a"
+				236 = {
+					spawn_rebels = {
+					size = 3
+					type = janissary_rebels
+					}
+				}
+			}
+}
+
+#Wacky races 003 - T2 Event
+#Wacky races winner 004 - T2 Event followup to 003
+
+#Japanese discover Manga 005 - T2 Event
+country_event = {
+	id = we.005 
+	title = we.005.t 
+	desc = we.005.d
+	picture = GFX_we_event_005
+	fire_only_once = yes
+	mean_time_to_happen = { months = 5000 }
+	trigger = {
+				tag = JAP
+				has_global_flag = we_occasional_mystery
+				has_discovered = 2284
+			  }
+			  
+	option = {
+				name = "we.005.a" #SUGOI
+				1020 = { change_religion = shamanism }	
+			}
+	option = {
+				name = "we.005.b" #Nani the fck
+				add_prestige = 20			
+			}		
+}
+
+#My horse is a genius 006 - T3Event
+
+#An heir returns 007 - T1 Event
+#scrapped - cant store heirs name
+
+#An heir returns changed 008 - T2 Event
+country_event = {
+	id = we.008 
+	title = we.008.t 
+	desc = we.008.d
+	picture = GFX_we_event_008
+	is_triggered_only = yes
+	
+	trigger = {}
+			  
+	option = {
+				name = "we.008.a" #Oh joy?!
+				define_heir = {
+				name = "Loretta"
+				age = 25
+				dynasty = ROOT
+				female = yes
+				block_disinherit = yes
+				}
+			}		
+}
+
+
+#An heir returns zombified 009 - T2 Event
+country_event = {
+	id = we.009 
+	title = we.009.t 
+	desc = we.009.d
+	picture = GFX_we_event_009
+	is_triggered_only = yes
+	
+	trigger = {}
+			  
+	option = {
+				name = "we.009.a" #Oh.... what the heck is that?!
+				define_heir = {
+					name = "beaurghhh"
+					age = 25
+					dynasty = ROOT
+					adm = 0
+					dip = 0
+					mil = 0	
+					block_disinherit = yes
+				}
+				add_heir_personality = babbling_buffoon_personality
+				
+			}	
+	after = {
+		clear_saved_name = we_heir
+	}
+}
+
+# Hunting accident alter 011 - T2-3 Event
+country_event = {
+	id = we.011
+	title = we.011.t
+	desc = we.011.d
+	picture = GFX_we_event_011
+	
+	trigger = {
+		has_heir = yes
+		heir_age = 15
+		is_lesser_in_union = no
+		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = polish_elective_monarchy }
+		NOT = { has_country_flag = no_more_hunting_for_heir }
+		NOT = { ruler_has_personality = babbling_buffoon_personality }
+		OR = { 
+				has_global_flag = we_occasional_mystery
+				has_global_flag = we_here_be_dragons 
+				}
+	}
+	mean_time_to_happen = {
+		months = 5000
+	}
+	option = {
+		name = "we.011.a"
+		kill_heir = {}
+		add_stability = -1
+	}
+	option = {
+		name = "we.011.b"
+		kill_heir = {}
+		add_prestige = -25
+		hidden_effect = {
+			random_list = {
+				25	= {	
+						IF = {
+							limit = { has_global_flag = we_occasional_mystery }
+							ROOT = {country_event = { id = we.008 days = 30 }}
+							}
+						}		
+				25	= {	
+						IF = {
+							limit = { has_global_flag = we_here_be_dragons }
+							ROOT = {country_event = { id = we.009 days = 30 }}
+							}
+						}
+				50 = {}
+				}
+		}
+	}
+}

@@ -1,0 +1,3 @@
+ROOT = {
+	change_primary_culture = appaloosa
+	}

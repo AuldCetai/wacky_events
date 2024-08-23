@@ -1,0 +1,59 @@
+#this is all for one event chain
+horse = { #horse culture is real
+	graphical_culture = westerngfx	
+
+	thoroughbred = {
+
+	}
+	arabian_horse = {
+
+	}
+	andalusian_horse = {
+
+	}
+	clydesdale = {
+
+	}
+	appaloosa = {
+
+	}
+	shire = {
+
+	}
+	fresian_horse = {
+
+	}
+	morgan = {
+
+	}
+	draft = {
+
+	}
+	mustang = {
+
+	}
+	ponies = {
+
+	}
+	donkey = {
+
+	}
+	male_names = {
+		Neighson Gallopson Buckaroo Stirrup Trotsky Clipclop Hoofman Manehattan Bridleton 
+		Stallionaire Bronco Clydesdale Haynry Hoofster Trotter Gallopson Mustango Saddleson
+		Whinnyson Reinster Derby Galloper Prancer Cavallo Gallopagos Neightly Stallion Coltsworth
+		Hooford Steed Buckshot Clipson Gallops Reinsley Trott Manehart Bridleson Mustang Clydeson 
+		Buckner Derbyshire Saddler Colton
+	}
+	female_names = {
+		Neighbelle Gallopina Whinny Marella Trotilda Maneria Bridlette Stirruppa Collette
+		Clipina Hoofette Trotella Clydessa Whinnette Neighra Prancer Stalliana Reinette
+		Derbella Saddlette Buckarina Maneera Prancia Whinnelle Clydelle 
+	}
+	dynasty_names = {
+		Neighstead Gallopshire Buckington Stirrupwell Trotworth Clipton Hoofshire Maneborough
+		Bridlemore Stallioncourt Bronceton Clydesford Hayworth Hoofington Trotland Gallopwood
+		Mustangrove Saddlebury Whinchester Reinhold Derbyton Hoofcrest Stallionhelm Coltsbridge
+		Bridleborn Buckminster
+	}
+}

@@ -1,0 +1,15 @@
+﻿l_english:
+#horse
+  horse:0 "Horse"
+  thoroughbred:0 "Thoroughbred"
+  arabian_horse:0 "Arabian"
+ 	andalusian_horse:0 "Andalusian"
+  clydesdale:0 "Clydesdale"
+ 	appaloosa:0 "Appaloosa"
+	shire:0 "Shire"
+	fresian_horse:0 "Fresian"
+	morgan:0 "Morgan"
+	draft:0 "Draft"
+	mustang:0 "Mustang"
+	ponies:0 "Pony"
+	donkey:0 "Donkey"
