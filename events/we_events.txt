@@ -46,7 +46,7 @@ country_event = {
 				owns = 236
 				is_in_war = {attackers = TUR}
 				NOT = {alliance_with = TUR}
-				has_global_flag = we_here_be_dragons
+				has_t3_selected = yes
 			  }
 			  
 	option = {
@@ -160,9 +160,8 @@ country_event = {
 		NOT = { has_country_flag = no_more_hunting_for_heir }
 		NOT = { ruler_has_personality = babbling_buffoon_personality }
 		OR = { 
-				has_global_flag = we_occasional_mystery
-				has_global_flag = we_here_be_dragons 
-				}
+			has_t3_selected = yes
+		}
 	}
 	mean_time_to_happen = {
 		months = 5000
@@ -180,13 +179,13 @@ country_event = {
 			random_list = {
 				25	= {	
 						IF = {
-							limit = { has_global_flag = we_occasional_mystery }
+							limit = { has_t2_selected = yes }
 							ROOT = {country_event = { id = we.008 days = 30 }}
 							}
 						}		
 				25	= {	
 						IF = {
-							limit = { has_global_flag = we_here_be_dragons }
+							limit = { has_t2_selected = yes }
 							ROOT = {country_event = { id = we.009 days = 30 }}
 							}
 						}
