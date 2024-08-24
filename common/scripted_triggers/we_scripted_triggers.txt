@@ -1,0 +1,16 @@
+has_t1_selected = {
+	has_global_flag = we_vanilla_plus
+}
+has_t2_selected = {
+	OR = {
+		has_global_flag = we_vanilla_plus
+		has_global_flag = we_occasional_mystery
+	}
+}
+has_t3_selected = {
+	OR = {
+		has_global_flag = we_vanilla_plus
+		has_global_flag = we_occasional_mystery
+		has_global_flag = we_here_be_dragons
+	}
+}
