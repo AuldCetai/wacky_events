@@ -1,5 +1,0 @@
-﻿on_startup = {
-			events = {  
-						we.001
-						}
-}
