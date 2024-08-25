@@ -15,15 +15,15 @@ guiTypes = {
 		hide_position = { x = 0 y = -165 }
 		animation_type = "decelerated"
 		animation_time = 600
-		
-		
+
+
 		iconType = {
 			name = "brown_bg"
 			spriteType ="GFX_brown_bg"
 			position = { x= 676 y = 20 }
 			alwaystransparent = yes
 		}
-		
+
 
 		iconType =
 		{
@@ -110,7 +110,7 @@ guiTypes = {
 			hint_tag = "hint_macrobuild"
 			shortcut = "b"
 		}
-		
+
 		iconType = {
 			name = "great_power_button_base"
 			quadTextureSprite ="GFX_great_power_button_base"
@@ -144,9 +144,33 @@ guiTypes = {
 			buttonFont = "Main_14_black"
 			clicksound = macro_build
 		}
+		windowType = {
+			name = "we_menu_window_button"
+			backGround=""
+			position = { x=0 y=0 }
+			size = { x=54 y=54 }
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			moveable = 0
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+			
+			
+			## WE OPEN MENU BUTTON
+			guiButtonType = {
+					name = "we_open_menu_button"
+					position = { x =-9 y =70 }
+					quadTextureSprite ="GFX_we_menu_open_button"
+					scripted = yes
+					Orientation = "LOWER_RIGHT"
+			}
+		}
 
 	######### top bar portraits ###########
-		
+
+
 		guiButtonType =
 		{
 			name ="icon_merchant"
@@ -183,8 +207,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			hint_tag = "hint_missionary"
 		}
-		
-		
 
 	##########################################
 
@@ -252,8 +274,7 @@ guiTypes = {
 
 
 	###########  top bar icons and values #############
-		
-		
+
 		iconType =
 		{
 			name ="icon_gold"
@@ -559,6 +580,9 @@ guiTypes = {
 
 	############### Power mechanics for a country ################
 
+
+
+
 		iconType =
 		{
 			name ="icon_corruption"
@@ -670,7 +694,11 @@ guiTypes = {
 			format = left
 			alwaystransparent = yes
 		}
-		
+
+
+
+
+
 
 	#################################################
 
@@ -687,9 +715,7 @@ guiTypes = {
 			maxHeight = 32
 			fixedsize = yes
 		}
-		
-		
-		
+
 
 	############### DATE PANEL ###################
 
@@ -727,35 +753,6 @@ guiTypes = {
 				maxWidth = 120
 				maxHeight = 32
 				format = center
-			}
-			
-			
-			
-		}
-		
-		
-		windowType = {
-			name = "we_menu_window_button"
-			backGround=""
-			position = { x=-203 y= 100 }
-			size = { x=406 y=70 }
-			dontRender = ""
-			horizontalBorder= ""
-			verticalBorder= ""
-			fullScreen = no
-			moveable = 0
-			Orientation = "CENTER_UP"
-			scripted = yes
-			
-			
-			## WE OPEN MENU BUTTON
-			guiButtonType = {
-					name = "we_open_menu_button"
-					position = { x = -1115 y = -45 }
-					quadTextureSprite ="GFX_we_menu_open_button"
-					scripted = yes
-					Orientation = "LOWER_RIGHT"
-					scale = 1.2
 			}
 		}
 		
@@ -838,7 +835,7 @@ guiTypes = {
 			
 			}
 			
-				# Piano:
+		# Piano:
 		windowType = {
 			name = "we_piano_window"
 			backGround =""
@@ -861,56 +858,63 @@ guiTypes = {
 				name = "we_white_key_1_button"
 				position = { x=104 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_far_left"
-				#shortcut = "TODO"
+				clicksound = A0
+				shortcut = "Ctrl+A"
 				scripted = yes
 			}
 			guiButtonType = {
 				name = "we_white_key_2_button"
 				position = { x=121 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
-				#shortcut = "TODO"
+				clicksound = B0
+				shortcut = "CTRL+S"
 				scripted = yes
 			}
-			
 			guiButtonType = {
 				name = "we_white_key_3_button"
 				position = { x=137 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_left"
-				#shortcut = "TODO"
+				clicksound = C0
+				shortcut = "CTRL+D"
 				scripted = yes
 			}
 			guiButtonType = {
 				name = "we_white_key_4_button"
 				position = { x=153 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
-				#shortcut = "TODO"
+				clicksound = D0
+				shortcut = "CTRL+F"
 				scripted = yes
 			}
 			guiButtonType = {
 				name = "we_white_key_5_button"
 				position = { x=169 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
-				#shortcut = "TODO"
+				clicksound = E0
+				shortcut = "CTRL+G"
 				scripted = yes
 			}
 			guiButtonType = {
 				name = "we_white_key_6_button"
 				position = { x=185 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_left"
-				#shortcut = "TODO"
+				clicksound = F0
+				shortcut = "CTRL+H"
 				scripted = yes
 			}
 			guiButtonType = {
 				name = "we_white_key_7_button"
 				position = { x=200 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
-				#shortcut = "TODO"
+				clicksound = G0
+				shortcut = "CTRL+J"
 				scripted = yes
 			}
 			guiButtonType = {
 				name = "we_white_key_8_button"
 				position = { x=218 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = A1
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -918,6 +922,7 @@ guiTypes = {
 				name = "we_white_key_9_button"
 				position = { x=233 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
+				clicksound = B1
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -925,6 +930,7 @@ guiTypes = {
 				name = "we_white_key_10_button"
 				position = { x=250 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_left"
+				clicksound = C1
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -932,6 +938,7 @@ guiTypes = {
 				name = "we_white_key_11_button"
 				position = { x=266 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = D1
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -939,6 +946,7 @@ guiTypes = {
 				name = "we_white_key_12_button"
 				position = { x=282 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
+				clicksound = E1
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -946,6 +954,7 @@ guiTypes = {
 				name = "we_white_key_13_button"
 				position = { x=298 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_left"
+				clicksound = F1
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -953,6 +962,7 @@ guiTypes = {
 				name = "we_white_key_14_button"
 				position = { x=313 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = G1
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -960,6 +970,7 @@ guiTypes = {
 				name = "we_white_key_15_button"
 				position = { x=331 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = A2
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -967,6 +978,7 @@ guiTypes = {
 				name = "we_white_key_16_button"
 				position = { x=346 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
+				clicksound = B2
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -974,6 +986,7 @@ guiTypes = {
 				name = "we_white_key_17_button"
 				position = { x=363 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_left"
+				clicksound = C2
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -981,6 +994,7 @@ guiTypes = {
 				name = "we_white_key_18_button"
 				position = { x=379 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = D2
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -988,6 +1002,7 @@ guiTypes = {
 				name = "we_white_key_19_button"
 				position = { x=395 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
+				clicksound = E2
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -995,6 +1010,7 @@ guiTypes = {
 				name = "we_white_key_20_button"
 				position = { x=410 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_left"
+				clicksound = F2
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1002,6 +1018,7 @@ guiTypes = {
 				name = "we_white_key_21_button"
 				position = { x=425 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = G2
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1009,6 +1026,7 @@ guiTypes = {
 				name = "we_white_key_22_button"
 				position = { x=443 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = A3
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1016,6 +1034,7 @@ guiTypes = {
 				name = "we_white_key_23_button"
 				position = { x=458 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
+				clicksound = B3
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1023,6 +1042,7 @@ guiTypes = {
 				name = "we_white_key_24_button"
 				position = { x=475 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_left"
+				clicksound = C3
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1030,6 +1050,7 @@ guiTypes = {
 				name = "we_white_key_25_button"
 				position = { x=491 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = D3
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1037,6 +1058,7 @@ guiTypes = {
 				name = "we_white_key_26_button"
 				position = { x=507 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
+				clicksound = E3
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1044,6 +1066,7 @@ guiTypes = {
 				name = "we_white_key_27_button"
 				position = { x=523 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_left"
+				clicksound = F3
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1051,6 +1074,7 @@ guiTypes = {
 				name = "we_white_key_28_button"
 				position = { x=538 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = G3
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1058,6 +1082,7 @@ guiTypes = {
 				name = "we_white_key_29_button"
 				position = { x=556 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = A4
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1065,6 +1090,7 @@ guiTypes = {
 				name = "we_white_key_30_button"
 				position = { x=571 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
+				clicksound = B4
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1072,6 +1098,7 @@ guiTypes = {
 				name = "we_white_key_31_button"
 				position = { x=588 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_left"
+				clicksound = C4
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1079,6 +1106,7 @@ guiTypes = {
 				name = "we_white_key_32_button"
 				position = { x=604 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = D4
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1086,6 +1114,7 @@ guiTypes = {
 				name = "we_white_key_33_button"
 				position = { x=620 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
+				clicksound = E4
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1093,6 +1122,7 @@ guiTypes = {
 				name = "we_white_key_34_button"
 				position = { x=636 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_left"
+				clicksound = F4
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1100,6 +1130,7 @@ guiTypes = {
 				name = "we_white_key_35_button"
 				position = { x=651 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = G4
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1107,6 +1138,7 @@ guiTypes = {
 				name = "we_white_key_36_button"
 				position = { x=669 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = A5
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1114,6 +1146,7 @@ guiTypes = {
 				name = "we_white_key_37_button"
 				position = { x=684 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
+				clicksound = B5
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1121,6 +1154,7 @@ guiTypes = {
 				name = "we_white_key_38_button"
 				position = { x=701 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_left"
+				clicksound = C5
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1128,6 +1162,7 @@ guiTypes = {
 				name = "we_white_key_39_button"
 				position = { x=717 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = D5
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1135,6 +1170,7 @@ guiTypes = {
 				name = "we_white_key_40_button"
 				position = { x=733 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
+				clicksound = E5
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1142,6 +1178,7 @@ guiTypes = {
 				name = "we_white_key_41_button"
 				position = { x=749 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_left"
+				clicksound = F5
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1149,6 +1186,7 @@ guiTypes = {
 				name = "we_white_key_42_button"
 				position = { x=764 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = G5
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1156,6 +1194,7 @@ guiTypes = {
 				name = "we_white_key_43_button"
 				position = { x=782 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = A6
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1163,6 +1202,7 @@ guiTypes = {
 				name = "we_white_key_44_button"
 				position = { x=797 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
+				clicksound = B6
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1170,6 +1210,7 @@ guiTypes = {
 				name = "we_white_key_45_button"
 				position = { x=813 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_left"
+				clicksound = C6
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1177,6 +1218,7 @@ guiTypes = {
 				name = "we_white_key_46_button"
 				position = { x=829 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = D6
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1184,6 +1226,7 @@ guiTypes = {
 				name = "we_white_key_47_button"
 				position = { x=845 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
+				clicksound = E6
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1191,6 +1234,7 @@ guiTypes = {
 				name = "we_white_key_48_button"
 				position = { x=861 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_left"
+				clicksound = F6
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1198,6 +1242,7 @@ guiTypes = {
 				name = "we_white_key_49_button"
 				position = { x=876 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = G6
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1205,6 +1250,7 @@ guiTypes = {
 				name = "we_white_key_50_button"
 				position = { x=894 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_mid"
+				clicksound = A7
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1212,6 +1258,7 @@ guiTypes = {
 				name = "we_white_key_51_button"
 				position = { x=909 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_white_right"
+				clicksound = B7
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1219,6 +1266,7 @@ guiTypes = {
 				name = "we_white_key_52_button"
 				position = { x=926 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_far_right"
+				clicksound = C7
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1227,6 +1275,7 @@ guiTypes = {
 				name = "we_black_key_1_button"
 				position = { x=117 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Ais0
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1234,6 +1283,7 @@ guiTypes = {
 				name = "we_black_key_2_button"
 				position = { x=145 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Cis0
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1241,6 +1291,7 @@ guiTypes = {
 				name = "we_black_key_3_button"
 				position = { x=165 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Dis0
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1248,6 +1299,7 @@ guiTypes = {
 				name = "we_black_key_4_button"
 				position = { x=193 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Fis0
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1255,6 +1307,7 @@ guiTypes = {
 				name = "we_black_key_5_button"
 				position = { x=211 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Gis0
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1262,6 +1315,7 @@ guiTypes = {
 				name = "we_black_key_6_button"
 				position = { x=229 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Ais1
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1269,6 +1323,7 @@ guiTypes = {
 				name = "we_black_key_7_button"
 				position = { x=258 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Cis1
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1276,6 +1331,7 @@ guiTypes = {
 				name = "we_black_key_8_button"
 				position = { x=277 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Dis1
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1283,6 +1339,7 @@ guiTypes = {
 				name = "we_black_key_9_button"
 				position = { x=306 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Fis1
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1290,6 +1347,7 @@ guiTypes = {
 				name = "we_black_key_10_button"
 				position = { x=324 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Gis1
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1297,6 +1355,7 @@ guiTypes = {
 				name = "we_black_key_11_button"
 				position = { x=342 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Ais2
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1304,6 +1363,7 @@ guiTypes = {
 				name = "we_black_key_12_button"
 				position = { x=371 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Cis2
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1311,6 +1371,7 @@ guiTypes = {
 				name = "we_black_key_13_button"
 				position = { x=390 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Dis2
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1318,6 +1379,7 @@ guiTypes = {
 				name = "we_black_key_14_button"
 				position = { x=418 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Fis2
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1325,6 +1387,7 @@ guiTypes = {
 				name = "we_black_key_15_button"
 				position = { x=436 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Gis2
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1332,6 +1395,7 @@ guiTypes = {
 				name = "we_black_key_16_button"
 				position = { x=454 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Ais3
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1339,6 +1403,7 @@ guiTypes = {
 				name = "we_black_key_17_button"
 				position = { x=483 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Cis3
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1346,6 +1411,7 @@ guiTypes = {
 				name = "we_black_key_18_button"
 				position = { x=503 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Dis3
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1353,6 +1419,7 @@ guiTypes = {
 				name = "we_black_key_19_button"
 				position = { x=531 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Fis3
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1360,6 +1427,7 @@ guiTypes = {
 				name = "we_black_key_20_button"
 				position = { x=549 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Gis3
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1367,6 +1435,7 @@ guiTypes = {
 				name = "we_black_key_21_button"
 				position = { x=567 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Ais4
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1374,6 +1443,7 @@ guiTypes = {
 				name = "we_black_key_22_button"
 				position = { x=596 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Cis4
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1381,6 +1451,7 @@ guiTypes = {
 				name = "we_black_key_23_button"
 				position = { x=615 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Dis4
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1388,6 +1459,7 @@ guiTypes = {
 				name = "we_black_key_24_button"
 				position = { x=644 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Fis4
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1395,6 +1467,7 @@ guiTypes = {
 				name = "we_black_key_25_button"
 				position = { x=662 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Gis4
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1402,6 +1475,7 @@ guiTypes = {
 				name = "we_black_key_26_button"
 				position = { x=680 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Ais5
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1409,6 +1483,7 @@ guiTypes = {
 				name = "we_black_key_27_button"
 				position = { x=709 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Cis5
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1416,6 +1491,7 @@ guiTypes = {
 				name = "we_black_key_28_button"
 				position = { x=728 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Dis5
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1423,6 +1499,7 @@ guiTypes = {
 				name = "we_black_key_29_button"
 				position = { x=757 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Fis5
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1430,6 +1507,7 @@ guiTypes = {
 				name = "we_black_key_30_button"
 				position = { x=775 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Gis5
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1437,6 +1515,7 @@ guiTypes = {
 				name = "we_black_key_31_button"
 				position = { x=793 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Ais6
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1444,6 +1523,7 @@ guiTypes = {
 				name = "we_black_key_32_button"
 				position = { x=821 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Cis6
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1451,6 +1531,7 @@ guiTypes = {
 				name = "we_black_key_33_button"
 				position = { x=841 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Dis6
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1458,6 +1539,7 @@ guiTypes = {
 				name = "we_black_key_34_button"
 				position = { x=869 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Fis6
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1465,6 +1547,7 @@ guiTypes = {
 				name = "we_black_key_35_button"
 				position = { x=887 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Gis6
 				#shortcut = "TODO"
 				scripted = yes
 			}
@@ -1472,11 +1555,11 @@ guiTypes = {
 				name = "we_black_key_36_button"
 				position = { x=905 y = 252}
 				quadTextureSprite ="GFX_we_piano_key_black"
+				clicksound = Ais7
 				#shortcut = "TODO"
 				scripted = yes
 			}
 		}
-		
 	} ### end of "topbar"
 
 	windowType = {
@@ -1521,7 +1604,5 @@ guiTypes = {
 			maxHeight = 60
 			format = centre
 		}
-		
-
 	}
 }
