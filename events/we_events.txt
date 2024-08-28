@@ -194,3 +194,365 @@ country_event = {
 		}
 	}
 }
+
+
+##drinks events
+
+#Mead - DRinks1	T1 Event
+country_event = {
+	id = we.016
+	title = we_drinks_mead.t #Mead
+	desc = we_drinks_mead.d # 
+	picture = GFX_we_event_016
+	fire_only_once = yes
+	mean_time_to_happen = { months = 12 }
+	trigger = {
+				owns = 1978
+				1978 = { religion = protestant }
+				}
+	immediate = {	
+			set_country_flag = we_drinks_mead_unlock
+			play_sound = we_drinks_mead_sound
+				}
+
+	option = {
+				name = "we_drinks_mead.a" 
+				add_prestige = 25
+				add_adm = 100
+				add_country_modifier = {				
+									name = we_drinks_mead_mod			
+									duration = 3650
+									}
+			}
+}
+
+country_event = {
+	id = we.017
+	title = we_drinks_sake.t #sake
+	desc = we_drinks_sake.d # 
+	picture = GFX_we_event_017
+	fire_only_once = yes
+	mean_time_to_happen = { months = 12 }
+	
+	trigger = {
+				owns = 1021
+				#great project mt fuji is at least lvl 2
+				}
+	immediate = {	
+			set_country_flag = we_drinks_sake_unlock
+			play_sound = we_drinks_sake_sound
+				}
+
+	option = {
+				name = "we_drinks_sake.a" 
+				add_prestige = 25
+				add_mil = 100
+				add_country_modifier = {				
+									name = we_drinks_sake_mod			
+									duration = 3650
+									}
+			}
+}
+
+
+country_event = {
+	id = we.018
+	title = we_drinks_port_wine.t #port_wine
+	desc = we_drinks_port_wine.d # 
+	picture = GFX_we_event_018
+	fire_only_once = yes
+	mean_time_to_happen = { months = 12 }
+	
+	trigger = {
+				owns = 231
+				trade_goods_produced_amount = {
+												trade_goods = wine
+												amount = 3
+										}
+				}
+	immediate = {	
+			set_country_flag = we_drinks_port_wine_unlock
+			play_sound = we_drinks_port_wine_sound
+				}
+
+	option = {
+				name = "we_drinks_port_wine.a" 
+				add_prestige = 25
+				add_dip = 100
+				add_country_modifier = {				
+									name = we_drinks_port_wine_mod			
+									duration = 3650
+									}
+			}
+}
+
+
+country_event = {
+	id = we.019
+	title = we_drinks_chicha.t #chicha
+	desc = we_drinks_chicha.d # 
+	picture = GFX_we_event_019
+	fire_only_once = yes
+	mean_time_to_happen = { months = 12 }
+	
+	trigger = {
+				owns = 2841
+				owns = 2822
+				owns = 839
+				}
+	immediate = {	
+			set_country_flag = we_drinks_chicha_unlock
+			play_sound = we_drinks_chicha_sound
+				}
+
+	option = {
+				name = "we_drinks_chicha.a" 
+				add_prestige = 25
+				add_dip = 100
+				add_country_modifier = {				
+									name = we_drinks_chicha_mod			
+									duration = 3650
+									}
+			}
+}
+
+
+country_event = {
+	id = we.020
+	title = we_drinks_coffee.t #coffee
+	desc = we_drinks_coffee.d # 
+	picture = GFX_we_event_020
+	fire_only_once = yes
+	mean_time_to_happen = { months = 12 }
+	
+	trigger = {
+				owns = 1218
+				1218 = { development = 30 }
+				}
+	immediate = {	
+			set_country_flag = we_drinks_coffee_unlock
+			play_sound = we_drinks_coffee_sound
+				}
+
+	option = {
+				name = "we_drinks_coffee.a" 
+				add_prestige = 25
+				add_adm = 100
+				add_country_modifier = {				
+									name = we_drinks_coffee_mod			
+									duration = 3650
+									}
+			}
+}
+
+
+country_event = {
+	id = we.021
+	title = we_drinks_masala_chai.t #masala_chai
+	desc = we_drinks_masala_chai.d # 
+	picture = GFX_we_event_021
+	fire_only_once = yes
+	mean_time_to_happen = { months = 12 }
+	
+	trigger = {
+				capital_scope = { superregion = india_superregion }
+				trade_goods_produced_amount = {
+												trade_goods = tea
+												amount = 3
+										}
+				}
+	immediate = {	
+			set_country_flag = we_drinks_masala_chai_unlock
+			play_sound = we_drinks_masala_chai_sound
+				}
+
+	option = {
+				name = "we_drinks_masala_chai.a" 
+				add_prestige = 25
+				add_dip = 100
+				add_country_modifier = {				
+									name = we_drinks_masala_chai_mod			
+									duration = 3650
+									}
+			}
+}
+
+
+country_event = {
+	id = we.022
+	title = we_drinks_rum.t #rum
+	desc = we_drinks_rum.d # 
+	picture = GFX_we_event_022
+	fire_only_once = yes
+	mean_time_to_happen = { months = 12 }
+	
+	trigger = {
+				has_flagship = yes
+				owns = 487
+				}
+	immediate = {	
+			set_country_flag = we_drinks_rum_unlock
+			play_sound = we_drinks_rum_sound
+				}
+
+	option = {
+				name = "we_drinks_rum.a" 
+				add_prestige = 25
+				add_mil = 100
+				add_country_modifier = {				
+									name = we_drinks_rum_mod			
+									duration = 3650
+									}
+			}
+}
+
+country_event = {
+	id = we.023
+	title = we_drinks_kvass.t #kvass
+	desc = we_drinks_kvass.d # 
+	picture = GFX_we_event_023
+	fire_only_once = yes
+	mean_time_to_happen = { months = 12 }
+	
+	trigger = {
+			OR = {
+				culture_group = russian
+				culture_group = polish
+				}
+			stability = -2
+			}
+	immediate = {	
+			set_country_flag = we_drinks_kvass_unlock
+			play_sound = we_drinks_kvass_sound
+				}
+
+	option = {
+				name = "we_drinks_kvass.a" 
+				add_prestige = 25
+				add_stability = 3
+				add_country_modifier = {				
+									name = we_drinks_kvass_mod			
+									duration = 3650
+									}
+			}
+}
+
+country_event = {
+	id = we.024
+	title = we_drinks_pulque.t #pulque
+	desc = we_drinks_pulque.d # 
+	picture = GFX_we_event_024
+	fire_only_once = yes
+	mean_time_to_happen = { months = 12 }
+	
+	trigger = {
+			owns = 848
+			vassal = 1
+			march = 1
+			}
+	immediate = {	
+			set_country_flag = we_drinks_pulque_unlock
+			play_sound = we_drinks_pulque_sound
+				}
+
+	option = {
+				name = "we_drinks_pulque.a" 
+				add_prestige = 25
+				add_mil = 100
+				add_country_modifier = {				
+									name = we_drinks_pulque_mod			
+									duration = 3650
+									}
+			}
+}
+
+
+country_event = {
+	id = we.025
+	title = we_drinks_boza.t #boza
+	desc = we_drinks_boza.d # 
+	picture = GFX_we_event_025
+	fire_only_once = yes
+	mean_time_to_happen = { months = 12 }
+	
+	trigger = {
+				capital_scope = { region = anatolia_region }
+				trade_goods_produced_amount = {
+												trade_goods = grain
+												amount = 10
+										}
+				}
+	immediate = {	
+			set_country_flag = we_drinks_boza_unlock
+			play_sound = we_drinks_boza_sound
+				}
+
+	option = {
+				name = "we_drinks_boza.a" 
+				add_prestige = 25
+				add_dip = 100
+				add_country_modifier = {				
+									name = we_drinks_boza_mod			
+									duration = 3650
+									}
+			}
+}
+
+country_event = {
+	id = we.026
+	title = we_drinks_tiswin.t #tiswin
+	desc = we_drinks_tiswin.d # 
+	picture = GFX_we_event_026
+	fire_only_once = yes
+	mean_time_to_happen = { months = 12 }
+	
+	trigger = {
+			owns = 2492
+			total_development = 200
+			}
+	immediate = {	
+			set_country_flag = we_drinks_tiswin_unlock
+			play_sound = we_drinks_tiswin_sound
+				}
+
+	option = {
+				name = "we_drinks_tiswin.a" 
+				add_prestige = 25
+				add_adm = 100
+				add_country_modifier = {				
+									name = we_drinks_tiswin_mod			
+									duration = 3650
+									}
+			}
+}
+
+
+country_event = {
+	id = we.027
+	title = we_drinks_kava.t #kava
+	desc = we_drinks_kava.d # 
+	picture = GFX_we_event_027
+	fire_only_once = yes
+	mean_time_to_happen = { months = 12 }
+	
+	trigger = {
+			owns = 1240
+			owns = 1726
+			owns = 1243
+			owns = 1995
+			}
+	immediate = {	
+			set_country_flag = we_drinks_kava_unlock
+			play_sound = we_drinks_kava_sound
+				}
+
+	option = {
+				name = "we_drinks_kava.a" 
+				add_prestige = 25
+				add_dip = 100
+				add_country_modifier = {				
+									name = we_drinks_kava_mod			
+									duration = 3650
+									}
+			}
+}

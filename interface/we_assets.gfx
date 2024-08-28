@@ -55,6 +55,78 @@ spriteTypes = {
 		noOfFrames = 3
 	}
 	
+	#assets
+	spriteType = {
+			name = "GFX_we_event_016"
+			texturefile = "gfx/event_pictures/event_016.dds"
+			transparencecheck = yes
+		}
+		
+	spriteType = {
+			name = "GFX_we_event_017"
+			texturefile = "gfx/event_pictures/event_017.dds"
+			transparencecheck = yes
+		}
+
+	spriteType = {
+			name = "GFX_we_event_018"
+			texturefile = "gfx/event_pictures/event_018.dds"
+			transparencecheck = yes
+		}
+
+	spriteType = {
+			name = "GFX_we_event_019"
+			texturefile = "gfx/event_pictures/event_019.dds"
+			transparencecheck = yes
+		}
+
+	spriteType = {
+			name = "GFX_we_event_020"
+			texturefile = "gfx/event_pictures/event_020.dds"
+			transparencecheck = yes
+		}
+
+	spriteType = {
+			name = "GFX_we_event_021"
+			texturefile = "gfx/event_pictures/event_021.dds"
+			transparencecheck = yes
+		}
+
+	spriteType = {
+			name = "GFX_we_event_022"
+			texturefile = "gfx/event_pictures/event_022.dds"
+			transparencecheck = yes
+		}
+
+	spriteType = {
+			name = "GFX_we_event_023"
+			texturefile = "gfx/event_pictures/event_023.dds"
+			transparencecheck = yes
+		}
+
+	spriteType = {
+			name = "GFX_we_event_024"
+			texturefile = "gfx/event_pictures/event_024.dds"
+			transparencecheck = yes
+		}
+
+	spriteType = {
+			name = "GFX_we_event_025"
+			texturefile = "gfx/event_pictures/event_025.dds"
+			transparencecheck = yes
+		}	
+
+	spriteType = {
+			name = "GFX_we_event_026"
+			texturefile = "gfx/event_pictures/event_026.dds"
+			transparencecheck = yes
+		}	
+		
+	spriteType = {
+			name = "GFX_we_event_027"
+			texturefile = "gfx/event_pictures/event_027.dds"
+			transparencecheck = yes
+	}	
 	
 	
 }

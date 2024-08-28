@@ -1,0 +1,13 @@
+#event modifiers
+ we_drinks_mead_mod = {	sailors_recovery_speed = 0.1 }
+ we_drinks_sake_mod = { amount_of_samurai = 1 }
+ we_drinks_port_wine_mod = { range = 20 }
+ we_drinks_chicha_mod = { num_accepted_cultures = 1}
+ we_drinks_coffee_mod = { years_to_integrate_personal_union = -5}
+ we_drinks_masala_chai_mod = { chance_to_inherit = 0.5}
+ we_drinks_rum_mod = { privateer_efficiency = 0.1}
+ we_drinks_kvass_mod = { discovered_relations_impact = -0.1}
+ we_drinks_pulque_mod = { relation_with_other_culture = 5}
+ we_drinks_boza_mod = { autonomy_change_time = -0.25}
+ we_drinks_tiswin_mod = { reelection_cost = -0.1}
+ we_drinks_kava_mod = {overextension_impact_modifier = -0.1}
