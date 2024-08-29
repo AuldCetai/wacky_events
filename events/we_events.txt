@@ -655,6 +655,9 @@ country_event = {
 					superregion = oceania_superregion
 				}
 			}
+			NOT = {
+				has_country_flag = switched_country_locations_before
+			}
 		}
 		NOT = {
 			government = native
@@ -664,7 +667,7 @@ country_event = {
 		NOT = {
 			had_global_flag = {
 				flag = has_switched_countries_flag
-				days = 9125
+				days = 3650
 			}
 		}
 	}
@@ -687,6 +690,9 @@ country_event = {
 						capital_scope = {
 							superregion = oceania_superregion
 						}
+					}
+					NOT = {
+						has_country_flag = switched_country_locations_before
 					}
 				}
 				save_event_target_as = country_for_switching
@@ -726,6 +732,12 @@ country_event = {
 			every_province = {
 				clr_province_flag = province_ceded_away_flag
 			}
+			event_target:country_for_switching = {
+				set_country_flag = switched_country_locations_before
+			}
+			event_target:country_for_switching_2 = {
+				set_country_flag = switched_country_locations_before
+			}
 		}
 	}
 }
@@ -748,6 +760,11 @@ country_event = { #Find new faith
 	desc = we.031.d
 	picture = RELIGIOUS_CONVERSION_eventPicture
 	trigger = {
+		OR = {
+			has_global_flag = we_vanilla_plus
+			has_global_flag = we_occasional_mystery
+			has_global_flag = we_here_be_dragons
+		}
 		NOT = {
 			has_country_flag = embraced_new_religion
 		}
@@ -853,7 +870,7 @@ country_event = { #Find new faith
 		}
 	}
 	option = {
-		name = "we_031.b" 
+		name = "we.031.b" 
 		add_prestige = -10
 	}
 }
