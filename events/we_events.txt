@@ -874,3 +874,202 @@ country_event = { #Find new faith
 		add_prestige = -10
 	}
 }
+
+#horse event
+
+country_event = {
+	id = we.100
+	title = we_horse_advisor.t
+	desc = we_horse_advisor.d
+	picture = GFX_we_event_100
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 2400
+
+		modifier = {
+			factor = 0.1
+			AND = {
+				adm = 0
+				dip = 0
+				mil = 0
+			}
+			NOT = {
+				adm = 1
+				dip = 1
+				mil = 1
+			}
+		}
+
+		modifier = {
+			factor = 0.5
+			OR = {
+				adm = 0
+				dip = 0
+				mil = 0
+			}
+			NOT = {
+				OR = {
+					adm = 1
+					dip = 1
+					mil = 1
+				}
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = we_had_horse_advisor
+	}
+
+	option = {
+		name = "we_horse_advisor.a"
+		define_advisor = {
+			type = master_of_mint
+			name = "Glitterhoof"
+			skill = 1
+			culture = mustang
+			discount = yes
+		}
+	}
+
+	option = {
+		name = "we_horse_advisor.b"
+		define_advisor = {
+			type = statesman
+			name = "Glitterhoof"
+			skill = 1
+			culture = mustang
+			discount = yes
+		}
+	}
+
+	option = {
+		name = "we_horse_advisor.c"
+		define_advisor = {
+			type = recruitmaster
+			name = "Glitterhoof"
+			skill = 1
+			culture = mustang
+			discount = yes
+		}
+	}
+
+	option = {
+		name = "we_horse_advisor.e"
+		remove_country_flag = we_had_horse_advisor
+	}
+}
+
+country_event = {
+	id = we.101
+	title = we_horse_ruler.t
+	desc = we_horse_ruler.d
+	picture = GFX_we_event_101
+	fire_only_once = yes
+	mean_time_to_happen = { 
+		months = 60
+		modifier = {
+			factor = 0.8
+			employed_advisor = {
+				name = "Glitterhoof"
+				skill = 2
+			}
+		}
+		modifier = {
+			factor = 0.75
+			employed_advisor = {
+				name = "Glitterhoof"
+				skill = 3
+			}
+		}
+		modifier = {
+			factor = 0.67
+			employed_advisor = {
+				name = "Glitterhoof"
+				skill = 4
+			}
+		}
+		modifier = {
+			factor = 0.5
+			employed_advisor = {
+				name = "Glitterhoof"
+				skill = 5
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = we_had_horse_ruler
+	}
+
+	trigger = {
+		has_country_flag = we_had_horse_advisor
+		employed_advisor = {
+			name = "Glitterhoof"
+		}
+	}
+
+	option = {
+		name = "we_horse_ruler.a"
+		define_ruler = {
+			name = "Glitterhoof"
+			culture = mustang
+		}
+		capital_scope = {
+			change_culture = mustang
+		}
+		if = {
+			limit = {
+				employed_advisor = {
+					name = "Glitterhoof"
+					skill = 5
+				}
+			}
+			ROOT = {
+				define_ruler = {
+					name = "Glitterhoof"
+					culture = mustang
+					adm = 5
+					dip = 5
+					mil = 5
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					employed_advisor = {
+						name = "glitterhoof"
+						type = master_of_mint
+					}
+					remove_advisor = master_of_mint
+				}
+			}
+			if = {
+				limit = {
+					employed_advisor = {
+						name = "glitterhoof"
+						type = statesman
+					}
+				}
+					remove_advisor = statesman
+				}
+			if = {
+				limit = {
+					employed_advisor = {
+						name = "glitterhoof"
+						type = recruitmaster
+					}
+				}
+					remove_advisor = recruitmaster
+				}
+			}
+	}
+
+	option = {
+		name = "we_horse_ruler.b"
+		remove_country_flag = we_had_horse_ruler
+		remove_country_flag = we_had_horse_advisor
+	}
+
+}

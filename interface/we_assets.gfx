@@ -133,4 +133,30 @@ spriteTypes = {
 		transparencecheck = yes
 }	
 	
+	#horse
+
+	spriteType = {
+		name = "GFX_we_event_100"
+		texturefile = "gfx/event_pictures/event_100_eventPicture.dds"
+		transparencecheck = yes
+	}	
+
+	spriteType = {
+		name = "GFX_we_event_101"
+		texturefile = "gfx/event_pictures/event_101_eventPicture.dds"
+		transparencecheck = yes
+	}	
+
+	spriteType = {
+		name = "GFX_we_event_102"
+		texturefile = "gfx/event_pictures/event_102_eventPicture.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_we_event_103"
+		texturefile = "gfx/event_pictures/event_103_eventPicture.dds"
+		transparencecheck = yes
+	}
+	
 }

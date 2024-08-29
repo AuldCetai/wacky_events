@@ -123,3 +123,17 @@
  ces_assimilate_desc: ""
  ces_decimation: "Decimation"
  ces_decimation_desc: ""
+#horse 
+we_horse_advisor.t:0"Horse Advisor"
+we_horse_advisor.d:0"Your horse has always struck you as being of a dependable sort, a quality you feel is sorely lacking in your advisors. Time to shake things up a bit.""
+we_horse_advisor.a:0"He will make an excellent Administrative advisor!"
+we_horse_advisor.b:0"He will make an excellent Diplomatic advisor!"
+we_horse_advisor.c:0"He will make an excellent Military advisor!"
+we_horse_advisor.e:0"What am i thinking!? A horse could never be advisor!"
+
+we_horse_ruler.t:0"Horse Ruler"
+we_horse_ruler.d:0"Your time has come. You realize the only way for your nation to live on is for your Trusty Steed to take over. He will serve your country well"
+we_horse_ruler.a:0"Foals rush in where angels fear to tread."
+we_horse_ruler.b:0"You imbecile. You know horses can never be King!"
+
+
