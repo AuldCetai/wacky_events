@@ -127,6 +127,10 @@ spriteTypes = {
 			texturefile = "gfx/event_pictures/event_027.dds"
 			transparencecheck = yes
 	}	
-	
+	spriteType = {
+		name = "GFX_we_event_028"
+		texturefile = "gfx/event_pictures/caesar_legion.dds"
+		transparencecheck = yes
+}	
 	
 }

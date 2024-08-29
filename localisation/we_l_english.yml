@@ -27,7 +27,25 @@
  we.011.t:0"Hunting accident."
  we.011.d:0"A few days earlier, [root.Heir.GetHerHis] went to the annual hunting competition, expecting great success. It is still unknown how, but the lifeless body was found so mangled alone in the nearby forest, that even the royal company had hard time identifying. The loss of your heir struck you like a blow never before, and spent the last few days before the funeral today in solitude. \n'Sire!' - you hear the chancellor calling. For once in your royal life, you cannot even raise your head from the altar. -'Death... comes for us all, in its preordained time. Your loss... no our nations loss cannot be described by mere words, yet the people, they're waiting for you, your Majesty.'"
  we.011.a:0"*[root.Monarch.GetName] rises in silence*"
- we.011.b:0"Very well."
+ we.011.b:0 "Very well."
+
+ we.029.t: "Whisked Away"
+ we.029.d: "It appears the entire population and government of [Root.GetName] and [country_for_switching.GetName] have been swapped, one for one. One may wonder why this occurence happened, but we shall never know."
+ we.029.a: "AHHHHHHHHHHHHH!"
+
+ we.30.t: "Whisked Away"
+ we.30.d: "It appears the entire population and government of [Root.GetName] and [country_for_switching_2.GetName] have been swapped, one for one. One may wonder why this occurence happened, but we shall never know."
+ we.30.a: "AHHHHHHHHHHHHH!"
+ 
+ we.031.t: "Finding a New Faith"
+ we.031.d: "Our [Root.Monarch.GetTitle] has been described as a bit . . . eccentric, and has recently gotten very into religions of the world. From Hinduism in India, to Islam in Arabia, to Buddhism in China, and even the pagan religions of Africa and the Americas. So dedicated, they have even been considering converting to a new religion, and the rest of the nation to boot!"
+ we.031.a: "We shall find new faith."
+ we.031.b: "[Root.Religion.GetName] is perfectly fine"
+
+ we_caesar_legion.t: "A Strange Figure in [118.GetName]"
+ we_caesar_legion.d: "A strange figure has shown up in [118.GetName]. He claims to be the legendary general Caesar, but speaks no Italian, and a strange variety of Latin. He does, however, speak English. He claims he is from 'The Legion' and was whisked away from his camp in a strange city called Flag-Staff. He has been walking around [118.GetName] attempting to recruit common people to become his 'Legionaries' to re-establish his supposed state."
+ we_caesar_legion.a: "He seems like he would make a great leader!"
+ we_caesar_legion.b: "What a lunatic."
 
  we_drinks_mead.t:0"Mead"
  we_drinks_sake.t:0"Sake"
@@ -82,3 +100,26 @@
  we_drinks_tiswin_mod:0"Geronimo! Geronimo! Me!"
  we_drinks_kava_mod:0"With a low ha"
 
+
+
+#Countries
+ CES: "Caesar's Legion"
+ CES_ADJ: "Legionary"
+ CES_ADJ2: "Legionary"
+ real_roman_ideas: "Caesar's Legion Ideas"
+ real_roman_ideas_start: "Legionary Traditions"
+ real_roman_ideas_bonus: "Legionary Ambitions"
+ ces_safe_for_merchants: "Safe for Merchants"
+ ces_safe_for_merchants_desc: ""
+ ces_frumentarii: "Frumentarii"
+ ces_frumentarii_desc: ""
+ ces_reliance_on_veterans: "Reliance on Veterans"
+ ces_reliance_on_veterans_desc: ""
+ ces_making_a_desert: "Making a Desert. . ."
+ ces_making_a_desert_desc: ""
+ ces_calling_it_peace: ". . .And Calling it Peace"
+ ces_calling_it_peace_desc: ""
+ ces_assimilate: "Forced Assimilation"
+ ces_assimilate_desc: ""
+ ces_decimation: "Decimation"
+ ces_decimation_desc: ""

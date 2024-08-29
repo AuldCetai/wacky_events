@@ -1,0 +1,38 @@
+real_roman_ideas = {
+	start = {
+		monarch_military_power = 1
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		administrative_efficiency = 0.05
+	}
+	
+	trigger = {
+		tag = CES
+	}
+	free = yes
+	
+	ces_safe_for_merchants = {
+		trade_efficiency = 0.1
+	}
+	ces_frumentarii = {
+		spy_offence = 0.25
+	}
+	ces_reliance_on_veterans = {
+		general_cost = -0.5
+	}
+	ces_making_a_desert = {
+		loot_amount = 0.5
+		hostile_attrition = 1
+	}
+	ces_calling_it_peace = {
+		global_unrest = -2
+	}
+	ces_assimilate = {
+		culture_conversion_cost = -0.2
+	}
+	ces_decimation = {
+		discipline = 0.05
+	}
+}

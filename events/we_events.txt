@@ -556,3 +556,304 @@ country_event = {
 									}
 			}
 }
+
+country_event = {
+	id = we.028
+	title = we_caesar_legion.t
+	desc = we_caesar_legion.d
+	picture = GFX_we_event_028
+	fire_only_once = yes
+	mean_time_to_happen = { 
+		months = 600 
+	}
+	major = yes
+	trigger = {
+		has_global_flag = we_here_be_dragons
+		118 = {
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		NOT = {
+			total_development = 300
+		}
+		NOT = {
+			has_country_flag = formed_caesar_legion_flag
+		}
+		is_year = 1460
+	}
+	option = {
+		name = "we_caesar_legion.a" 
+		change_tag = CES
+		restore_country_name_effect = yes
+		if = {
+			limit = { NOT = { government_rank = 2 } }
+			set_government_rank = 2
+		}
+		if = {
+			limit = {
+				has_custom_ideas = no
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		set_country_flag = formed_caesar_legion_flag
+		118 = {
+			change_province_name = "Nova Flagstaff"
+			rename_capital = "Nova Flagstaff"
+		}
+		define_ruler = {
+			name = "Edward 'Ceasar'"
+			dynasty = "Sallow"
+			adm = 4
+			dip = 4
+			mil = 5
+			age = 40
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = "we_caesar_legion.b" 
+		add_prestige = 25
+		add_manpower = -0.001
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = we.029
+	title = we.029.t
+	desc = we.029.d
+	picture = SYNTHETICS_eventPicture
+	mean_time_to_happen = { 
+		months = 600 
+	}
+	major = yes
+	trigger = {
+		OR = {
+			has_global_flag = we_occasional_mystery
+			has_global_flag = we_here_be_dragons
+		}
+		any_country = {
+			is_at_war = no
+			num_of_provinces_in_states = 2
+			ai = yes
+			NOT = {
+				government = native
+			}
+			NOT = {
+				has_reform = daimyo
+			}
+			NOT = {
+				capital_scope = {
+					superregion = oceania_superregion
+				}
+			}
+		}
+		NOT = {
+			government = native
+		}
+		is_at_war = no
+		num_of_provinces_in_states = 2 
+		NOT = {
+			had_global_flag = {
+				flag = has_switched_countries_flag
+				days = 9125
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					is_at_war = no
+					NOT = {
+						num_of_provinces_in_states = 2
+					}
+					ai = yes
+					NOT = {
+						has_reform = daimyo
+					}
+					NOT = {
+						government = native
+					}
+					NOT = {
+						capital_scope = {
+							superregion = oceania_superregion
+						}
+					}
+				}
+				save_event_target_as = country_for_switching
+			}
+			save_event_target_as = country_for_switching_2
+		}
+	}
+	option = {
+		name = "we.029.a" 
+		clr_global_flag = has_switched_countries_flag
+		set_global_flag = has_switched_countries_flag
+		custom_tooltip = "Our countries shall be swapped!"
+		hidden_effect = {
+			event_target:country_for_switching = {
+				every_owned_province = {
+					set_province_flag = province_ceded_away_flag
+					remove_core = event_target:country_for_switching
+				}
+			}
+			inherit = event_target:country_for_switching
+			every_owned_province = {
+				limit = {
+					NOT = {
+						has_province_flag = province_ceded_away_flag
+					}
+				}
+				cede_province = event_target:country_for_switching
+				add_core = event_target:country_for_switching
+				remove_core = event_target:country_for_switching_2
+			}
+			every_owned_province = {
+				limit = {
+					has_province_flag = province_ceded_away_flag
+				}
+				add_core = ROOT
+			}
+			every_province = {
+				clr_province_flag = province_ceded_away_flag
+			}
+		}
+	}
+}
+
+country_event = {
+	id = we.030
+	title = we.30.t
+	desc = we.30.d
+	picture = SYNTHETICS_eventPicture
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = "we.30.a" 
+	}
+}
+
+country_event = { #Find new faith
+	id = we.031
+	title = we.031.t
+	desc = we.031.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	trigger = {
+		NOT = {
+			has_country_flag = embraced_new_religion
+		}
+		is_at_war = no
+		NOT = {
+			is_in_coalition = yes
+		}
+		NOT ={
+			is_part_of_hre = yes
+		}
+	}
+	mean_time_to_happen = {
+		months = 1000
+	}
+	option = {
+		name = "we.031.a" 
+		set_country_flag = embraced_new_religion
+		random_list = {
+			2 = {
+				trigger = { NOT = { religion = catholic }}
+				change_religion = catholic
+			}
+			2 = {
+				trigger = { NOT = { religion = anglican } is_religion_enabled = anglican }
+				change_religion = anglican
+			}
+			2 = {
+				trigger = { NOT = { religion = protestant } is_religion_enabled = protestant }
+				change_religion = protestant
+			}
+			2 = {
+				trigger = { NOT = { religion = reformed } is_religion_enabled = reformed }
+				change_religion = reformed
+			}
+			2 = {
+				trigger = { NOT = { religion = sikhism } is_religion_enabled = sikhism }
+				change_religion = sikhism
+			}
+			2 = {
+				trigger = { NOT = { religion = norse_pagan_reformed }}
+				change_religion = norse_pagan_reformed
+			}
+			2 = {
+				trigger = { NOT = { religion = tengri_pagan_reformed }}
+				change_religion = tengri_pagan_reformed
+			}
+			2 = {
+				trigger = { NOT = { religion = shamanism }}
+				change_religion = shamanism
+			}
+			2 = {
+				trigger = { NOT = { religion = confucianism }}
+				change_religion = confucianism
+			}
+			2 = {
+				trigger = { NOT = { religion = shinto }}
+				change_religion = shinto
+			}
+			2 = {
+				trigger = { NOT = { religion = sunni }}
+				change_religion = sunni
+			}
+			2 = {
+				trigger = { NOT = { religion = shiite }}
+				change_religion = shiite
+			}
+			2 = {
+				trigger = { NOT = { religion = ibadi }}
+				change_religion = ibadi
+			}
+			2 = {
+				trigger = { NOT = { religion = hinduism }}
+				change_religion = hinduism
+			}
+			2 = {
+				trigger = { NOT = { religion = buddhism }}
+				change_religion = buddhism
+			}
+			2 = {
+				trigger = { NOT = { religion = vajrayana }}
+				change_religion = vajrayana
+			}
+			2 = {
+				trigger = { NOT = { religion = mahayana }}
+				change_religion = mahayana
+			}
+			2 = {
+				trigger = { NOT = { religion = totemism }}
+				change_religion = totemism
+			}
+			2 = {
+				trigger = { NOT = { religion = zoroastrian }}
+				change_religion = zoroastrian
+			}
+			2 = {
+				trigger = { NOT = { religion = orthodox }}
+				change_religion = orthodox
+			}
+			2 = {
+				trigger = { NOT = { religion = hussite }}
+				change_religion = hussite
+			}
+		}
+	}
+	option = {
+		name = "we_031.b" 
+		add_prestige = -10
+	}
+}
