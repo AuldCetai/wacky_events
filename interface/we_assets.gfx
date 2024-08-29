@@ -55,7 +55,27 @@ spriteTypes = {
 		noOfFrames = 3
 	}
 	
-	#assets
+	spriteType = {
+		name = "GFX_we_drinks_map_bg"
+		texturefile = "gfx/interface/we_drinks_map_bg.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_drinks"
+		texturefile = "gfx/interface/we_drinks.dds"
+		transparencecheck = yes
+		noOfFrames = 14
+	}
+	
+	spriteType = {
+		name = "GFX_we_drinks_small"
+		texturefile = "gfx/interface/we_drinks_small.dds"
+		transparencecheck = yes
+		noOfFrames = 14
+	}
+	
+		#assets
 	spriteType = {
 			name = "GFX_we_event_016"
 			texturefile = "gfx/event_pictures/event_016.dds"

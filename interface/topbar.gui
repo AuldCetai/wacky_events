@@ -15,15 +15,15 @@ guiTypes = {
 		hide_position = { x = 0 y = -165 }
 		animation_type = "decelerated"
 		animation_time = 600
-
-
+		
+		
 		iconType = {
 			name = "brown_bg"
 			spriteType ="GFX_brown_bg"
 			position = { x= 676 y = 20 }
 			alwaystransparent = yes
 		}
-
+		
 
 		iconType =
 		{
@@ -110,7 +110,7 @@ guiTypes = {
 			hint_tag = "hint_macrobuild"
 			shortcut = "b"
 		}
-
+		
 		iconType = {
 			name = "great_power_button_base"
 			quadTextureSprite ="GFX_great_power_button_base"
@@ -144,7 +144,7 @@ guiTypes = {
 			buttonFont = "Main_14_black"
 			clicksound = macro_build
 		}
-		windowType = {
+	windowType = {
 			name = "we_menu_window_button"
 			backGround=""
 			position = { x=0 y=0 }
@@ -169,8 +169,7 @@ guiTypes = {
 		}
 
 	######### top bar portraits ###########
-
-
+		
 		guiButtonType =
 		{
 			name ="icon_merchant"
@@ -207,6 +206,8 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			hint_tag = "hint_missionary"
 		}
+		
+		
 
 	##########################################
 
@@ -274,7 +275,8 @@ guiTypes = {
 
 
 	###########  top bar icons and values #############
-
+		
+		
 		iconType =
 		{
 			name ="icon_gold"
@@ -580,9 +582,6 @@ guiTypes = {
 
 	############### Power mechanics for a country ################
 
-
-
-
 		iconType =
 		{
 			name ="icon_corruption"
@@ -694,11 +693,7 @@ guiTypes = {
 			format = left
 			alwaystransparent = yes
 		}
-
-
-
-
-
+		
 
 	#################################################
 
@@ -715,7 +710,9 @@ guiTypes = {
 			maxHeight = 32
 			fixedsize = yes
 		}
-
+		
+		
+		
 
 	############### DATE PANEL ###################
 
@@ -753,6 +750,35 @@ guiTypes = {
 				maxWidth = 120
 				maxHeight = 32
 				format = center
+			}
+			
+			
+			
+		}
+		
+		
+		windowType = {
+			name = "we_menu_window_button"
+			backGround=""
+			position = { x=-203 y= 100 }
+			size = { x=406 y=70 }
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			moveable = 0
+			Orientation = "CENTER_UP"
+			scripted = yes
+			
+			
+			## WE OPEN MENU BUTTON
+			guiButtonType = {
+					name = "we_open_menu_button"
+					position = { x = -1115 y = -45 }
+					quadTextureSprite ="GFX_we_menu_open_button"
+					scripted = yes
+					Orientation = "LOWER_RIGHT"
+					scale = 1.2
 			}
 		}
 		
@@ -814,9 +840,9 @@ guiTypes = {
 					Orientation = "LOWER_RIGHT"
 					scale = 1
 				}
-			## WE Wackiness animals world map
+			## WE Wackiness drinks of the world
 				guiButtonType = {
-					name = "we_animals_of_the_world"
+					name = "we_drinks_map_open_button" #to be moved to ribbon
 					position = { x = -100 y = 180 }
 					quadTextureSprite ="GFX_placeholder"
 					scripted = yes
@@ -835,7 +861,251 @@ guiTypes = {
 			
 			}
 			
-		# Piano:
+			# Drinksmap
+		windowType = {
+			name = "we_drinks_map_window"
+			backGround =""
+			position = { x=-511 y=-280 }
+			size = { x=1037 y=507 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = ""
+			Orientation = "CENTER"
+			scripted = yes
+			
+			iconType ={
+					name ="we_drinks_map_bg"
+					spriteType = "GFX_we_drinks_map_bg"
+					position = { x = 25 y = -75 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+			
+			guiButtonType ={
+					name ="we_drinks_1"
+					quadTextureSprite = "GFX_we_drinks"
+					position = { x = 135 y = 25 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			iconType ={
+					name ="we_drinks_1_onmap"
+					quadTextureSprite = "GFX_we_drinks_small"
+					position = { x = 485 y = 280 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+			
+			guiButtonType ={
+					name ="we_drinks_2"
+					quadTextureSprite = "GFX_we_drinks"
+					position = { x = 265 y = 25 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			iconType ={
+					name ="we_drinks_2_onmap"
+					quadTextureSprite = "GFX_we_drinks_small"
+					position = { x = 485 y = 280 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+			
+			guiButtonType ={
+					name ="we_drinks_3"
+					quadTextureSprite = "GFX_we_drinks"
+					position = { x = 395 y = 25 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			iconType ={
+					name ="we_drinks_3_onmap"
+					quadTextureSprite = "GFX_we_drinks_small"
+					position = { x = 485 y = 280 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+
+			guiButtonType ={
+					name ="we_drinks_4"
+					quadTextureSprite = "GFX_we_drinks"
+					position = { x = 525 y = 25 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			iconType ={
+					name ="we_drinks_4_onmap"
+					quadTextureSprite = "GFX_we_drinks_small"
+					position = { x = 485 y = 280 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			guiButtonType ={
+					name ="we_drinks_5"
+					quadTextureSprite = "GFX_we_drinks"
+					position = { x = 655 y = 25 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			iconType ={
+					name ="we_drinks_5_onmap"
+					quadTextureSprite = "GFX_we_drinks_small"
+					position = { x = 485 y = 280 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+
+			guiButtonType ={
+					name ="we_drinks_6"
+					quadTextureSprite = "GFX_we_drinks"
+					position = { x = 785 y = 25 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			iconType ={
+					name ="we_drinks_6_onmap"
+					quadTextureSprite = "GFX_we_drinks_small"
+					position = { x = 485 y = 280 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+
+				
+			#ROW2	
+			
+			guiButtonType ={
+					name ="we_drinks_7"
+					quadTextureSprite = "GFX_we_drinks"
+					position = { x = 200 y = 90 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			iconType ={
+					name ="we_drinks_7_onmap"
+					quadTextureSprite = "GFX_we_drinks_small"
+					position = { x = 485 y = 280 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			guiButtonType ={
+					name ="we_drinks_8"
+					quadTextureSprite = "GFX_we_drinks"
+					position = { x = 330 y = 90 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			iconType ={
+					name ="we_drinks_8_onmap"
+					quadTextureSprite = "GFX_we_drinks_small"
+					position = { x = 485 y = 280 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+
+			guiButtonType ={
+					name ="we_drinks_9"
+					quadTextureSprite = "GFX_we_drinks"
+					position = { x = 460 y = 90 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			iconType ={
+					name ="we_drinks_9_onmap"
+					quadTextureSprite = "GFX_we_drinks_small"
+					position = { x = 485 y = 280 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+
+			guiButtonType ={
+					name ="we_drinks_10"
+					quadTextureSprite = "GFX_we_drinks"
+					position = { x = 590 y = 90 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			iconType ={
+					name ="we_drinks_10_onmap"
+					quadTextureSprite = "GFX_we_drinks_small"
+					position = { x = 485 y = 280 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+
+			guiButtonType ={
+					name ="we_drinks_11"
+					quadTextureSprite = "GFX_we_drinks"
+					position = { x = 720 y = 90 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			iconType ={
+					name ="we_drinks_11_onmap"
+					quadTextureSprite = "GFX_we_drinks_small"
+					position = { x = 485 y = 280 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			guiButtonType ={
+					name ="we_drinks_12"
+					quadTextureSprite = "GFX_we_drinks"
+					position = { x = 850 y = 90 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			iconType ={
+					name ="we_drinks_12_onmap"
+					quadTextureSprite = "GFX_we_drinks_small"
+					position = { x = 485 y = 280 }
+					Orientation = "UPPER_LEFT"
+					scripted = yes
+					scale = 1
+				}
+				
+			}
+		
+			
+			
+				# Piano:
 		windowType = {
 			name = "we_piano_window"
 			backGround =""

@@ -14,3 +14,20 @@ has_t3_selected = {
 		has_global_flag = we_here_be_dragons
 	}
 }
+
+has_t1_speed_selected = {
+	has_global_flag = we_wackiness_rare
+}
+has_t2_speed_selected = {
+	OR = {
+		has_global_flag = we_wackiness_rare
+		has_global_flag = we_wackiness_medium
+	}
+}
+has_t3_speed_selected = {
+	OR = {
+		has_global_flag = we_wackiness_rare
+		has_global_flag = we_wackiness_medium
+		has_global_flag = we_wackiness_everyday
+	}
+}

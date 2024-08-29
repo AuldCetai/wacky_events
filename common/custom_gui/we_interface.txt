@@ -9,6 +9,11 @@ custom_window = {
 }
 
 
+custom_window = {
+	name = we_drinks_map_window
+	potential = { has_country_flag = we_drinks_map_open }
+}
+
 #WE open menu button
 custom_button = {
 	name = we_open_menu_button
@@ -165,10 +170,11 @@ custom_button = {
 
 
 custom_button = {
-	name = we_animals_of_the_world
+	name = we_drinks_map_open_button
     potential = {} 
   	trigger = { }
   	effect = { 
+				set_country_flag = we_drinks_map_open
 			}
 	}
 
@@ -181,3 +187,424 @@ custom_button = {
   	effect = { 
 			}
 	}
+	
+
+custom_button = {
+	name = we_drinks_1
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+  	effect = { 
+			
+			}
+			
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 1
+		trigger = { always = yes }
+				}			
+}
+
+
+custom_icon = {
+	name = we_drinks_1_onmap
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 14
+		trigger = { always = yes }
+				}			
+}
+
+custom_button = {
+	name = we_drinks_2
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+  	effect = { 
+			
+			}
+			
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 1
+		trigger = { always = yes }
+				}			
+}
+
+
+custom_icon = {
+	name = we_drinks_2_onmap
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 14
+		trigger = { always = yes }
+				}			
+}
+
+custom_button = {
+	name = we_drinks_3
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+  	effect = { 
+			
+			}
+			
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 1
+		trigger = { always = yes }
+				}			
+}
+
+
+custom_icon = {
+	name = we_drinks_3_onmap
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 14
+		trigger = { always = yes }
+				}			
+}
+
+custom_button = {
+	name = we_drinks_4
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+  	effect = { 
+			
+			}
+			
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 1
+		trigger = { always = yes }
+				}			
+}
+
+
+custom_icon = {
+	name = we_drinks_4_onmap
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 14
+		trigger = { always = yes }
+				}			
+}
+
+custom_button = {
+	name = we_drinks_5
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+  	effect = { 
+			
+			}
+			
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 1
+		trigger = { always = yes }
+				}			
+}
+
+
+custom_icon = {
+	name = we_drinks_5_onmap
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 14
+		trigger = { always = yes }
+				}			
+}
+
+custom_button = {
+	name = we_drinks_6
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+  	effect = { 
+			
+			}
+			
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 1
+		trigger = { always = yes }
+				}			
+}
+
+
+custom_icon = {
+	name = we_drinks_6_onmap
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 14
+		trigger = { always = yes }
+				}			
+}
+
+custom_button = {
+	name = we_drinks_7
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+  	effect = { 
+			
+			}
+			
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 1
+		trigger = { always = yes }
+				}			
+}
+
+
+custom_icon = {
+	name = we_drinks_7_onmap
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 14
+		trigger = { always = yes }
+				}			
+}
+
+custom_button = {
+	name = we_drinks_8
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+  	effect = { 
+			
+			}
+			
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 1
+		trigger = { always = yes }
+				}			
+}
+
+
+custom_icon = {
+	name = we_drinks_8_onmap
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 14
+		trigger = { always = yes }
+				}			
+}
+
+custom_button = {
+	name = we_drinks_9
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+  	effect = { 
+			
+			}
+			
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 1
+		trigger = { always = yes }
+				}			
+}
+
+
+custom_icon = {
+	name = we_drinks_9_onmap
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 14
+		trigger = { always = yes }
+				}			
+}
+
+custom_button = {
+	name = we_drinks_10
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+  	effect = { 
+			
+			}
+			
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 1
+		trigger = { always = yes }
+				}			
+}
+
+
+custom_icon = {
+	name = we_drinks_10_onmap
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 14
+		trigger = { always = yes }
+				}			
+}
+
+custom_button = {
+	name = we_drinks_11
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+  	effect = { 
+			
+			}
+			
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 1
+		trigger = { always = yes }
+				}			
+}
+
+
+custom_icon = {
+	name = we_drinks_11_onmap
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 14
+		trigger = { always = yes }
+				}			
+}
+
+custom_button = {
+	name = we_drinks_12
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+  	effect = { 
+			
+			}
+			
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 1
+		trigger = { always = yes }
+				}			
+}
+
+
+custom_icon = {
+	name = we_drinks_12_onmap
+    potential = {has_country_flag = we_drinks_map_open} 
+  	trigger = { }
+	
+	frame = {
+		number = 2
+		trigger = { has_country_flag = we_drinks_mead}
+				}
+	frame = {
+		number = 14
+		trigger = { always = yes }
+				}			
+}
