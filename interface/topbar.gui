@@ -850,16 +850,16 @@ guiTypes = {
 					scale = 1
 				}
 			## WE Wackiness empty space for ideas
-				guiButtonType = {
-					name = "we_placeholder_for_menu"
-					position = { x = -100 y = 280 }
-					quadTextureSprite ="GFX_placeholder"
-					scripted = yes
-					Orientation = "LOWER_RIGHT"
-					scale = 1
-				}	
-			
-			}
+			#	guiButtonType = {
+			#		name = "we_placeholder_for_menu"
+			#		position = { x = -100 y = 280 }
+			#		quadTextureSprite ="GFX_placeholder"
+			#		scripted = yes
+			#		Orientation = "LOWER_RIGHT"
+			#		scale = 1
+			#	}	
+			#
+			#}
 			
 			# Drinksmap
 		windowType = {

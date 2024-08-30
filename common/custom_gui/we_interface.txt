@@ -51,38 +51,7 @@ custom_button = {
     potential = {} 
   	trigger = { always = yes}
   	effect = { 
-		IF = {
-			limit = {
-				OR = {
-					has_global_flag = we_vanilla_plus
-					OR = {
-								NOT = {
-									has_global_flag = we_vanilla_plus
-									has_global_flag = we_occasional_mystery
-									has_global_flag = we_here_be_dragons
-											}
-								}
-					}
-				}
-				
-				set_global_flag = we_occasional_mystery
-				clr_global_flag = we_vanilla_plus
-				}
-		ELSE_IF = {  
-			limit = {
-				has_global_flag = we_occasional_mystery
-				}
-				set_global_flag = we_here_be_dragons
-				clr_global_flag = we_occasional_mystery
-				}
-		ELSE_IF = { 
-			limit = {
-				has_global_flag = we_here_be_dragons
-				}
-				set_global_flag = we_vanilla_plus
-				clr_global_flag = we_here_be_dragons
-				}
-		ELSE = { set_global_flag = we_vanilla_plus }
+		country_event = {id = we.001}
 		}	
 	frame = {
 			number = 1
