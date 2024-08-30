@@ -20,19 +20,43 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_we_event_008"
-		texturefile = "gfx/event_pictures/event_005.dds"
+		texturefile = "gfx/event_pictures/event_008.dds"
 		transparencecheck = yes
 	}
 	
 	spriteType = {
 		name = "GFX_we_event_009"
-		texturefile = "gfx/event_pictures/event_005.dds"
+		texturefile = "gfx/event_pictures/event_009.dds"
 		transparencecheck = yes
 	}
 	
 	spriteType = {
 		name = "GFX_we_event_011"
-		texturefile = "gfx/event_pictures/event_005.dds"
+		texturefile = "gfx/event_pictures/event_011.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_event_012"
+		texturefile = "gfx/event_pictures/event_012.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_event_013"
+		texturefile = "gfx/event_pictures/event_013.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_event_014"
+		texturefile = "gfx/event_pictures/event_014.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_event_015"
+		texturefile = "gfx/event_pictures/event_015.dds"
 		transparencecheck = yes
 	}
 	
@@ -151,7 +175,37 @@ spriteTypes = {
 		name = "GFX_we_event_028"
 		texturefile = "gfx/event_pictures/caesar_legion.dds"
 		transparencecheck = yes
-}	
+	}	
+	
+	spriteType = {
+			name = "GFX_we_event_032"
+			texturefile = "gfx/event_pictures/event_032.dds"
+			transparencecheck = yes
+	}	
+	
+	spriteType = {
+			name = "GFX_we_event_033"
+			texturefile = "gfx/event_pictures/event_033.dds"
+			transparencecheck = yes
+	}	
+	
+	spriteType = {
+		name = "GFX_we_piano_icon"
+		texturefile = "gfx/interface/we_piano_icon.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_drinks_icon"
+		texturefile = "gfx/interface/we_drinks_icon.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_we_third_idea_icon"
+		texturefile = "gfx/interface/third_idea.dds"
+		transparencecheck = yes
+	}
 	
 	#horse
 

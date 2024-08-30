@@ -6,7 +6,6 @@ country_event = {
 	title = we.001.t 
 	desc = we.001.d
 	picture = GFX_we_event_001
-	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = { always = yes }
 			  
@@ -195,6 +194,139 @@ country_event = {
 	}
 }
 
+#Lost crown jewels 012 - T2 Event
+country_event = {
+	id = we.012
+	title = we.012.t 
+	desc = we.012.d
+	picture = GFX_we_event_012
+	mean_time_to_happen = { months = 1200 }
+	trigger = {
+				has_consort = yes
+				is_female = no
+			  }
+			  
+	option = {
+				name = "we.012.a" 
+				change_dip = -1
+				add_legitimacy = -20
+			}
+	
+}
+
+
+country_event = {
+	id = we.013 
+	title = we.013.t 
+	desc = we.013.d
+	picture = GFX_we_event_013
+	mean_time_to_happen = { months = 1200 }
+	trigger = {
+				has_advisor = yes
+			  }
+			  
+	option = {
+				name = "we.013.a" #
+				add_prestige = -20
+				add_treasury = -50
+				
+			}
+	option = {
+				name = "we.013.b" #
+				kill_advisor = random			
+			}		
+}
+
+country_event = {
+	id = we.014 
+	title = we.014.t 
+	desc = we.014.d
+	picture = GFX_we_event_014
+	mean_time_to_happen = { months = 1200 }
+	fire_only_once = yes
+	
+	trigger = {
+				has_discovered = 1104
+			  }
+			  
+	option = {
+				name = "we.014.a" #
+				random_list = {
+					75 = {
+						custom_tooltip = we.014.donkey
+						add_prestige = -25	
+						}
+					20 = {
+						custom_tooltip = we.014.donkey_too
+						add_dip_power = -25	
+						}
+					5 = {
+						custom_tooltip = we.014.not_donkey
+						add_adm_power = 200
+						}
+					}
+			}
+	option = {
+				name = "we.014.b" #
+				add_prestige = -5			
+			}		
+}
+
+
+country_event = {
+	id = we.015 
+	title = we.015.t 
+	desc = we.015.d
+	picture = GFX_we_event_015
+	mean_time_to_happen = { months = 1200 }
+	fire_only_once = yes
+	
+	trigger = {
+				has_discovered = 1177
+			  }
+			  
+	option = {
+				name = "we.015.a" #
+				add_prestige = 30
+				add_treasury = -50
+				add_piety = 0.1
+				add_church_power = 10
+				add_fervor = 10
+				add_harmony = 10
+			}
+	option = {
+				name = "we.015.b" #
+				random_neighbor_country = {
+					add_favors = {
+						who = ROOT
+						amount = 10
+					}				
+				}			
+			}
+			
+	option = {
+				name = "we.015.c" #
+				trigger = { ruler_has_personality = zealot_personality }
+				add_mil_power_tech = 1
+				add_reform_desire = 0.5
+				set_primitive = yes
+			}	
+
+	option = {
+				name = "we.015.e" #
+				trigger = { ruler_has_personality = cruel_personality }
+				add_adm_power = 150
+				every_country = {
+					limit = { capital_scope = {superregion = africa_superregion } }
+					add_opinion = {
+						who = ROOT
+						modifier = we_horrible_barbarism
+					}				
+				}	
+				
+			}			
+}
+
 
 ##drinks events
 
@@ -218,7 +350,7 @@ country_event = {
 	option = {
 				name = "we_drinks_mead.a" 
 				add_prestige = 25
-				add_adm = 100
+				add_adm_power = 100
 				add_country_modifier = {				
 									name = we_drinks_mead_mod			
 									duration = 3650
@@ -246,7 +378,7 @@ country_event = {
 	option = {
 				name = "we_drinks_sake.a" 
 				add_prestige = 25
-				add_mil = 100
+				add_mil_power = 100
 				add_country_modifier = {				
 									name = we_drinks_sake_mod			
 									duration = 3650
@@ -278,7 +410,7 @@ country_event = {
 	option = {
 				name = "we_drinks_port_wine.a" 
 				add_prestige = 25
-				add_dip = 100
+				add_dip_power = 100
 				add_country_modifier = {				
 									name = we_drinks_port_wine_mod			
 									duration = 3650
@@ -308,7 +440,7 @@ country_event = {
 	option = {
 				name = "we_drinks_chicha.a" 
 				add_prestige = 25
-				add_dip = 100
+				add_dip_power = 100
 				add_country_modifier = {				
 									name = we_drinks_chicha_mod			
 									duration = 3650
@@ -337,7 +469,7 @@ country_event = {
 	option = {
 				name = "we_drinks_coffee.a" 
 				add_prestige = 25
-				add_adm = 100
+				add_adm_power = 100
 				add_country_modifier = {				
 									name = we_drinks_coffee_mod			
 									duration = 3650
@@ -369,7 +501,7 @@ country_event = {
 	option = {
 				name = "we_drinks_masala_chai.a" 
 				add_prestige = 25
-				add_dip = 100
+				add_dip_power = 100
 				add_country_modifier = {				
 									name = we_drinks_masala_chai_mod			
 									duration = 3650
@@ -398,7 +530,7 @@ country_event = {
 	option = {
 				name = "we_drinks_rum.a" 
 				add_prestige = 25
-				add_mil = 100
+				add_mil_power = 100
 				add_country_modifier = {				
 									name = we_drinks_rum_mod			
 									duration = 3650
@@ -458,7 +590,7 @@ country_event = {
 	option = {
 				name = "we_drinks_pulque.a" 
 				add_prestige = 25
-				add_mil = 100
+				add_mil_power = 100
 				add_country_modifier = {				
 									name = we_drinks_pulque_mod			
 									duration = 3650
@@ -490,7 +622,7 @@ country_event = {
 	option = {
 				name = "we_drinks_boza.a" 
 				add_prestige = 25
-				add_dip = 100
+				add_dip_power = 100
 				add_country_modifier = {				
 									name = we_drinks_boza_mod			
 									duration = 3650
@@ -518,7 +650,7 @@ country_event = {
 	option = {
 				name = "we_drinks_tiswin.a" 
 				add_prestige = 25
-				add_adm = 100
+				add_adm_power = 100
 				add_country_modifier = {				
 									name = we_drinks_tiswin_mod			
 									duration = 3650
@@ -549,7 +681,7 @@ country_event = {
 	option = {
 				name = "we_drinks_kava.a" 
 				add_prestige = 25
-				add_dip = 100
+				add_dip_power = 100
 				add_country_modifier = {				
 									name = we_drinks_kava_mod			
 									duration = 3650
@@ -874,6 +1006,58 @@ country_event = { #Find new faith
 		add_prestige = -10
 	}
 }
+
+
+country_event= {
+	id = we.032
+	title = we.032.t 
+	desc = we.032.d
+	picture = GFX_we_event_032
+	mean_time_to_happen = { months = 5000 }
+	trigger = {
+				NOT = {num_of_cities = 2}
+				has_global_flag = we_here_be_dragons
+			  }
+	immediate = {
+				random_owned_province = {
+						limit = { is_capital = no }
+								save_event_target_as = we_abducted_people
+								}
+				random_province = {
+						limit = { is_capital = no }
+								save_event_target_as = we_dropoff_point
+								}						
+				} 
+	  
+	option = {
+				name = "we.032.a" 
+				event_target:we_dropoff_point = {
+						change_culture = event_target:we_abducted_people
+						change_religion = event_target:we_abducted_people
+						IF = {
+							limit = { event_target:we_abducted_people = { set_in_empire = yes }}
+							set_in_empire = yes 
+							}
+						}
+				custom_tooltip = we.32.citygone	
+				hidden_effect = {		
+					event_target:we_abducted_people = {
+									cede_province = uncolonized
+									set_province_flag = colonizable
+									clr_province_flag = colonize
+									clr_province_flag = land_grab
+									clr_province_flag = native_policy
+									clr_province_flag = native_uprising
+									clr_province_flag = native_repression
+									clr_province_flag = native_assimilation
+									clr_province_flag = native_restriction
+								}
+				}
+			}		
+}
+
+
+
 
 #horse event
 

@@ -147,24 +147,25 @@ guiTypes = {
 	windowType = {
 			name = "we_menu_window_button"
 			backGround=""
-			position = { x=0 y=0 }
-			size = { x=54 y=54 }
+			position = { x=-203 y= 100 }
+			size = { x=406 y=70 }
 			dontRender = ""
 			horizontalBorder= ""
 			verticalBorder= ""
 			fullScreen = no
 			moveable = 0
-			Orientation = "UPPER_LEFT"
+			Orientation = "CENTER_UP"
 			scripted = yes
 			
 			
 			## WE OPEN MENU BUTTON
 			guiButtonType = {
 					name = "we_open_menu_button"
-					position = { x =-9 y =70 }
+					position = { x = -1115 y = -45 }
 					quadTextureSprite ="GFX_we_menu_open_button"
 					scripted = yes
 					Orientation = "LOWER_RIGHT"
+					scale = 1.2
 			}
 		}
 
@@ -835,7 +836,7 @@ guiTypes = {
 				guiButtonType = {
 					name = "we_piano_opener"
 					position = { x = -100 y = 80 }
-					quadTextureSprite ="GFX_placeholder"
+					quadTextureSprite ="GFX_we_piano_icon"
 					scripted = yes
 					Orientation = "LOWER_RIGHT"
 					scale = 1
@@ -844,22 +845,23 @@ guiTypes = {
 				guiButtonType = {
 					name = "we_drinks_map_open_button" #to be moved to ribbon
 					position = { x = -100 y = 180 }
-					quadTextureSprite ="GFX_placeholder"
+					quadTextureSprite ="GFX_we_drinks_icon"
 					scripted = yes
 					Orientation = "LOWER_RIGHT"
 					scale = 1
 				}
 			## WE Wackiness empty space for ideas
-			#	guiButtonType = {
-			#		name = "we_placeholder_for_menu"
-			#		position = { x = -100 y = 280 }
-			#		quadTextureSprite ="GFX_placeholder"
-			#		scripted = yes
-			#		Orientation = "LOWER_RIGHT"
-			#		scale = 1
-			#	}	
-			#
-			#}
+				guiButtonType = {
+					name = "we_placeholder_for_menu"
+					position = { x = -100 y = 280 }
+					quadTextureSprite ="GFX_we_third_idea_icon"
+					scripted = yes
+					Orientation = "LOWER_RIGHT"
+					scale = 1
+				}	
+			
+			
+			}
 			
 			# Drinksmap
 		windowType = {
@@ -1100,6 +1102,16 @@ guiTypes = {
 					scripted = yes
 					scale = 1
 				}
+			## WE CLOSE MAP MENU BUTTON
+			guiButtonType = {
+				name = "we_close_map_button"
+				position = { x = 990 y = -85 }
+				quadTextureSprite ="GFX_closebutton2"
+				scripted = yes
+				Orientation = "UPPER_LEFT"
+				scale = 1.2
+			}	
+				
 				
 			}
 		
