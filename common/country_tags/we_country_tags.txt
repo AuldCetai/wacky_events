@@ -1,1 +1,2 @@
 CES = "countries/CaesarsLegion.txt"
+EQU = "countries/EquestrianNation.txt"
