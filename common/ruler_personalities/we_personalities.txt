@@ -1,9 +1,7 @@
 #custom personalities
 
 zombie_personality = {
-	ruler_allow = { always = no }
-	heir_allow = { always = no }
-	consort_allow = { always = no }
+	allow = { always = no }
 	easy_war_chance_multiplier = 0.7
 	alliance_acceptance = -20
 	

@@ -112,6 +112,7 @@
  we_drinks_pulque.a:0"Tlazocamati!"
  we_drinks_boza.a:0"Serefe!"
  we_drinks_tiswin.a:0"S-he꞉pid su꞉dagi ʼan hohoʼid!"
+ we_drinks_tiswin.a.tt:0"It's some form of Elvish, I can't read it.\n"
  we_drinks_kava.a:0"Malo!"
  
  #loc
@@ -128,6 +129,12 @@
  we_drinks_tiswin_mod:0"Geronimo! Geronimo! Me!"
  we_drinks_kava_mod:0"With a low ha"
 
+# Custom GUI:
+ we_wackiness_selector_tt: "Wackiness Level"
+ we_wackiness_frequency_tt: "Events Frequency"
+ we_piano_opener_tt: "Events Frequency"
+ we_drinks_map_open_button_tt: "Events Frequency"
+ we_placeholder_for_menu_tt: "Events Frequency"
 
 
 #Countries

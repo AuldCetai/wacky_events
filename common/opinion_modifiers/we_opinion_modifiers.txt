@@ -1,0 +1,4 @@
+we_horrible_barbarism = {
+	opinion = -150
+	yearly_decay = 4
+}

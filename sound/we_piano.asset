@@ -1,4 +1,9 @@
 sound = {
+	name = twilight_zone
+	file = "twilight_zone.wav"
+}
+# Piano:
+sound = {
 	name = A0
 	file = "0/A0.wav"
 }

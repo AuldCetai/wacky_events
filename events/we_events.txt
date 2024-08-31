@@ -14,6 +14,8 @@ country_event = {
 				name = "we.001.a"
 				custom_tooltip = we.001.att
 				set_global_flag = we_vanilla_plus
+				clr_global_flag = we_occasional_mystery
+				clr_global_flag = we_here_be_dragons
 			}
 			
 	option = {	
@@ -21,6 +23,8 @@ country_event = {
 				name = "we.001.b"
 				custom_tooltip = we.001.btt
 				set_global_flag = we_occasional_mystery
+				clr_global_flag = we_vanilla_plus
+				clr_global_flag = we_here_be_dragons
 			}
 
 	option = {
@@ -28,6 +32,8 @@ country_event = {
 				name = "we.001.c"
 				custom_tooltip = we.001.ctt
 				set_global_flag = we_here_be_dragons
+				clr_global_flag = we_vanilla_plus
+				clr_global_flag = we_occasional_mystery
 			}			
 }
 
@@ -307,9 +313,9 @@ country_event = {
 	option = {
 				name = "we.015.c" #
 				trigger = { ruler_has_personality = zealot_personality }
-				add_mil_power_tech = 1
+				add_mil_tech = 1
 				add_reform_desire = 0.5
-				set_primitive = yes
+				#set_primitive = yes # Not working, sorry.
 			}	
 
 	option = {
@@ -649,6 +655,7 @@ country_event = {
 
 	option = {
 				name = "we_drinks_tiswin.a" 
+				custom_tooltip = we_drinks_tiswin.a.tt
 				add_prestige = 25
 				add_adm_power = 100
 				add_country_modifier = {				
@@ -1035,14 +1042,14 @@ country_event= {
 						change_culture = event_target:we_abducted_people
 						change_religion = event_target:we_abducted_people
 						IF = {
-							limit = { event_target:we_abducted_people = { set_in_empire = yes }}
+							limit = { event_target:we_abducted_people = { OR = { is_part_of_hre = yes is_emperor = yes } } }
 							set_in_empire = yes 
 							}
 						}
 				custom_tooltip = we.32.citygone	
 				hidden_effect = {		
 					event_target:we_abducted_people = {
-									cede_province = uncolonized
+									cede_province = --- # uncolonized
 									set_province_flag = colonizable
 									clr_province_flag = colonize
 									clr_province_flag = land_grab
@@ -1140,7 +1147,7 @@ country_event = {
 
 	option = {
 		name = "we_horse_advisor.e"
-		remove_country_flag = we_had_horse_advisor
+		clr_country_flag = we_had_horse_advisor
 	}
 }
 
@@ -1226,8 +1233,8 @@ country_event = {
 						name = "glitterhoof"
 						type = master_of_mint
 					}
-					remove_advisor = master_of_mint
 				}
+					remove_advisor = master_of_mint
 			}
 			if = {
 				limit = {
@@ -1252,8 +1259,8 @@ country_event = {
 
 	option = {
 		name = "we_horse_ruler.b"
-		remove_country_flag = we_had_horse_ruler
-		remove_country_flag = we_had_horse_advisor
+		clr_country_flag = we_had_horse_ruler
+		clr_country_flag = we_had_horse_advisor
 	}
 
 }
@@ -1294,8 +1301,8 @@ country_event = {
 
 	option = {
 		name = "we_horse_nation.b"
-		remove_country_flag = we_had_horse_ruler
-		remove_country_flag = we_had_horse_advisor
-		remove_country_flag = we_had_horse_nation
+		clr_country_flag = we_had_horse_ruler
+		clr_country_flag = we_had_horse_advisor
+		clr_country_flag = we_had_horse_nation
 	}
 }

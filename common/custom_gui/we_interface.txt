@@ -16,12 +16,7 @@ custom_window = {
 
 custom_button = {
 	name = we_close_map_button
-    potential = {} 
-  	trigger = { 
-		hidden_trigger = {
-			has_country_flag = we_drinks_map_open
-			}
-		}
+    potential = { has_country_flag = we_drinks_map_open } 
   	effect = { 
 		hidden_effect = {
 			clr_country_flag = we_drinks_map_open
@@ -32,11 +27,7 @@ custom_button = {
 #WE open menu button
 custom_button = {
 	name = we_open_menu_button
-    potential = {} 
-  	trigger = { 
-		hidden_trigger = {
-			NOT = {has_country_flag = we_menu_is_open_already_silly} }
-		}
+    potential = { NOT = { has_country_flag = we_menu_is_open_already_silly } }
   	effect = { 
 		hidden_effect = {
 			set_country_flag = we_menu_is_open_already_silly
@@ -46,12 +37,7 @@ custom_button = {
 ##WE menu close button
 custom_button = {
 	name = we_close_menu_button
-    potential = {} 
-  	trigger = { 
-		hidden_trigger = {
-			has_country_flag = we_menu_is_open_already_silly 
-			}
-		}
+    potential = { has_country_flag = we_menu_is_open_already_silly } 
   	effect = { 
 		hidden_effect = {
 			clr_country_flag = we_menu_is_open_already_silly
@@ -63,10 +49,10 @@ custom_button = {
 
 custom_button = {
 	name = we_wackiness_selector
-    potential = {} 
-  	trigger = { always = yes}
+  	potential = { always = yes}
   	effect = { 
 		country_event = {id = we.001}
+		play_sound = twilight_zone
 		}	
 	frame = {
 			number = 1
@@ -81,6 +67,7 @@ custom_button = {
 			trigger = {has_global_flag = we_here_be_dragons}
 			}
 				
+		tooltip = we_wackiness_selector_tt
 				
 }
 
@@ -88,8 +75,7 @@ custom_button = {
 
 custom_button = {
 	name = we_wackiness_frequency
-    potential = {} 
-  	trigger = { always = yes}
+  	potential = { always = yes}
   	effect = { 
 		IF = {
 			limit = {
@@ -136,52 +122,44 @@ custom_button = {
 			trigger = {has_global_flag = we_wackiness_everyday}
 			}
 				
-				
+		tooltip = we_wackiness_frequency_tt
 }
 
 
 custom_button = {
 	name = we_piano_opener
-    potential = {} 
-  	trigger = { NOT = {has_country_flag = we_piano_flag} }
+  	potential = { NOT = {has_country_flag = we_piano_flag} }
   	effect = {
   			hidden_effect = {
 			    set_country_flag = we_piano_flag
 				} 
 			}
+		tooltip = we_piano_opener_tt
 	}
 
 
 
 custom_button = {
 	name = we_drinks_map_open_button
-    potential = {} 
-  	trigger = { }
+  	potential = { always = yes}
   	effect = { 
 				set_country_flag = we_drinks_map_open
 			}
+		tooltip = we_drinks_map_open_button_tt
 	}
 
 
 
 custom_button = {
 	name = we_placeholder_for_menu
-    potential = {} 
-  	trigger = { }
-  	effect = { 
-			}
+  	potential = { always = yes}
+	tooltip = we_placeholder_for_menu_tt
 	}
 	
 
 custom_button = {
 	name = we_drinks_1
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
 	frame = {
 		number = 2
 		trigger = { has_country_flag = we_drinks_mead_unlock}
@@ -196,7 +174,6 @@ custom_button = {
 custom_icon = {
 	name = we_drinks_1_onmap
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
 	
 	frame = {
 		number = 2
@@ -211,12 +188,6 @@ custom_icon = {
 custom_button = {
 	name = we_drinks_2
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
 	frame = {
 		number = 3
 		trigger = { has_country_flag = we_drinks_sake_unlock}
@@ -231,8 +202,6 @@ custom_button = {
 custom_icon = {
 	name = we_drinks_2_onmap
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-	
 	frame = {
 		number = 3
 		trigger = { has_country_flag = we_drinks_sake_unlock}
@@ -246,12 +215,6 @@ custom_icon = {
 custom_button = {
 	name = we_drinks_3
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
 	frame = {
 		number = 4
 		trigger = { has_country_flag = we_drinks_port_wine_unlock}
@@ -266,8 +229,6 @@ custom_button = {
 custom_icon = {
 	name = we_drinks_3_onmap
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-	
 	frame = {
 		number = 4
 		trigger = { has_country_flag = we_drinks_port_wine_unlock}
@@ -281,12 +242,6 @@ custom_icon = {
 custom_button = {
 	name = we_drinks_4
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
 	frame = {
 		number = 5
 		trigger = { has_country_flag = we_drinks_chicha_unlock}
@@ -301,8 +256,6 @@ custom_button = {
 custom_icon = {
 	name = we_drinks_4_onmap
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-	
 	frame = {
 		number = 5
 		trigger = { has_country_flag = we_drinks_chicha_unlock}
@@ -316,12 +269,6 @@ custom_icon = {
 custom_button = {
 	name = we_drinks_5
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
 	frame = {
 		number = 6
 		trigger = { has_country_flag = we_drinks_coffee_unlock}
@@ -336,8 +283,6 @@ custom_button = {
 custom_icon = {
 	name = we_drinks_5_onmap
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-	
 	frame = {
 		number = 6
 		trigger = { has_country_flag = we_drinks_coffee_unlock}
@@ -351,12 +296,6 @@ custom_icon = {
 custom_button = {
 	name = we_drinks_6
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
 	frame = {
 		number = 7
 		trigger = { has_country_flag = we_drinks_masala_chai_unlock}
@@ -371,8 +310,6 @@ custom_button = {
 custom_icon = {
 	name = we_drinks_6_onmap
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-	
 	frame = {
 		number = 7
 		trigger = { has_country_flag = we_drinks_masala_chai_unlock}
@@ -386,12 +323,6 @@ custom_icon = {
 custom_button = {
 	name = we_drinks_7
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
 	frame = {
 		number = 8
 		trigger = { has_country_flag = we_drinks_rum_unlock}
@@ -406,8 +337,6 @@ custom_button = {
 custom_icon = {
 	name = we_drinks_7_onmap
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-	
 	frame = {
 		number = 8
 		trigger = { has_country_flag = we_drinks_rum_unlock}
@@ -421,12 +350,6 @@ custom_icon = {
 custom_button = {
 	name = we_drinks_8
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
 	frame = {
 		number = 9
 		trigger = { has_country_flag = we_drinks_kvass_unlock}
@@ -441,8 +364,6 @@ custom_button = {
 custom_icon = {
 	name = we_drinks_8_onmap
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-	
 	frame = {
 		number = 9
 		trigger = { has_country_flag = we_drinks_kvass_unlock}
@@ -456,12 +377,6 @@ custom_icon = {
 custom_button = {
 	name = we_drinks_9
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
 	frame = {
 		number = 10
 		trigger = { has_country_flag = we_drinks_pulque_unlock}
@@ -476,8 +391,6 @@ custom_button = {
 custom_icon = {
 	name = we_drinks_9_onmap
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-	
 	frame = {
 		number = 10
 		trigger = { has_country_flag = we_drinks_pulque_unlock}
@@ -491,12 +404,6 @@ custom_icon = {
 custom_button = {
 	name = we_drinks_10
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
 	frame = {
 		number = 11
 		trigger = { has_country_flag = we_drinks_boza_unlock}
@@ -511,8 +418,6 @@ custom_button = {
 custom_icon = {
 	name = we_drinks_10_onmap
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-	
 	frame = {
 		number = 11
 		trigger = { has_country_flag = we_drinks_boza_unlock}
@@ -526,12 +431,6 @@ custom_icon = {
 custom_button = {
 	name = we_drinks_11
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
 	frame = {
 		number = 12
 		trigger = { has_country_flag = we_drinks_tiswin_unlock}
@@ -546,8 +445,6 @@ custom_button = {
 custom_icon = {
 	name = we_drinks_11_onmap
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-	
 	frame = {
 		number = 12
 		trigger = { has_country_flag = we_drinks_tiswin_unlock}
@@ -561,12 +458,6 @@ custom_icon = {
 custom_button = {
 	name = we_drinks_12
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-  	effect = { 
-			
-			}
-			
-	
 	frame = {
 		number = 13
 		trigger = { has_country_flag = we_drinks_kava_unlock}
@@ -581,8 +472,6 @@ custom_button = {
 custom_icon = {
 	name = we_drinks_12_onmap
     potential = {has_country_flag = we_drinks_map_open} 
-  	trigger = { }
-	
 	frame = {
 		number = 13
 		trigger = { has_country_flag = we_drinks_kava_unlock}

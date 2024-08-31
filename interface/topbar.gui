@@ -144,28 +144,27 @@ guiTypes = {
 			buttonFont = "Main_14_black"
 			clicksound = macro_build
 		}
-	windowType = {
+		windowType = {
 			name = "we_menu_window_button"
 			backGround=""
-			position = { x=-203 y= 100 }
-			size = { x=406 y=70 }
+			position = { x=0 y=0 }
+			size = { x=54 y=54 }
 			dontRender = ""
 			horizontalBorder= ""
 			verticalBorder= ""
 			fullScreen = no
 			moveable = 0
-			Orientation = "CENTER_UP"
+			Orientation = "UPPER_LEFT"
 			scripted = yes
 			
 			
 			## WE OPEN MENU BUTTON
 			guiButtonType = {
 					name = "we_open_menu_button"
-					position = { x = -1115 y = -45 }
+					position = { x =-9 y =70 }
 					quadTextureSprite ="GFX_we_menu_open_button"
 					scripted = yes
 					Orientation = "LOWER_RIGHT"
-					scale = 1.2
 			}
 		}
 
@@ -755,32 +754,6 @@ guiTypes = {
 			
 			
 			
-		}
-		
-		
-		windowType = {
-			name = "we_menu_window_button"
-			backGround=""
-			position = { x=-203 y= 100 }
-			size = { x=406 y=70 }
-			dontRender = ""
-			horizontalBorder= ""
-			verticalBorder= ""
-			fullScreen = no
-			moveable = 0
-			Orientation = "CENTER_UP"
-			scripted = yes
-			
-			
-			## WE OPEN MENU BUTTON
-			guiButtonType = {
-					name = "we_open_menu_button"
-					position = { x = -1115 y = -45 }
-					quadTextureSprite ="GFX_we_menu_open_button"
-					scripted = yes
-					Orientation = "LOWER_RIGHT"
-					scale = 1.2
-			}
 		}
 		
 		windowType = {
