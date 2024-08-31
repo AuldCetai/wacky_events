@@ -2,9 +2,18 @@ custom_window = {
 	name = we_piano_window
 	potential = { has_country_flag = we_piano_flag }
 }
-custom_window = {
+custom_icon = {
 	name = we_piano_background
 	potential = { has_country_flag = we_piano_flag }
+}
+# Wacky Shots:
+#custom_window = {
+#	name = we_wacky_shots_window
+#	potential = { has_country_flag = we_wacky_shots_clip_flag }
+#}
+custom_button = {
+	name = we_piano_close_button
+	effect = { clr_country_flag = we_piano_flag }
 }
 # White keys:
 custom_button = {

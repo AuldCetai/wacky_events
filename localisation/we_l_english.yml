@@ -132,9 +132,9 @@
 # Custom GUI:
  we_wackiness_selector_tt: "Wackiness Level"
  we_wackiness_frequency_tt: "Events Frequency"
- we_piano_opener_tt: "Events Frequency"
- we_drinks_map_open_button_tt: "Events Frequency"
- we_placeholder_for_menu_tt: "Events Frequency"
+ we_piano_opener_tt: "Become the Piano Man"
+ we_drinks_map_open_button_tt: "Guide to the World"
+ we_placeholder_for_menu_tt: "Jump Into Wackiness"
 
 
 #Countries

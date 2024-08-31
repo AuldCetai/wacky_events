@@ -166,6 +166,14 @@ guiTypes = {
 					scripted = yes
 					Orientation = "LOWER_RIGHT"
 			}
+			## WE OPEN MENU BUTTON
+			guiButtonType = {
+					name = "we_close_menu_button"
+					position = { x =-9 y =70 }
+					quadTextureSprite ="GFX_we_menu_open_button"
+					scripted = yes
+					Orientation = "LOWER_RIGHT"
+			}
 		}
 
 	######### top bar portraits ###########
@@ -768,22 +776,13 @@ guiTypes = {
 			moveable = 0
 			Orientation = "CENTER_UP"
 			scripted = yes
-			
+
 				iconType ={
 					name ="we_menu_bg"
 					spriteType = "GFX_we_menu_bg"
 					position = { x = -100 y = 50 }
 					Orientation = "UPPER_LEFT"
-				}
-			
-			## WE CLOSE MENU BUTTON
-				guiButtonType = {
-					name = "we_close_menu_button"
-					position = { x = 40 y = -25 }
-					quadTextureSprite ="GFX_closebutton2"
 					scripted = yes
-					Orientation = "LOWER_RIGHT"
-					scale = 1.2
 				}
 			
 			## WE Wackiness selector button
@@ -835,6 +834,39 @@ guiTypes = {
 			
 			
 			}
+			
+		# Wacky Shots:
+		#windowType = {
+		#	name = "we_wacky_shots_window"
+		#	backGround=""
+		#	position = { x=-203 y= 100 }
+		#	size = { x=406 y=70 }
+		#	dontRender = ""
+		#	horizontalBorder= ""
+		#	verticalBorder= ""
+		#	fullScreen = no
+		#	moveable = 0
+		#	Orientation = "CENTER_UP"
+		#	scripted = yes
+		#	
+		#	iconType ={
+		#		name ="we_wacky_shots_background"
+		#		position = { x = -44 y = 430 }
+		#		spriteType = "GFX_wacky_shots_background"
+		#		scripted = yes
+		#	}
+		#	iconType ={
+		#		name ="we_wacky_shots_clip"
+		#		position = { x = 0 y = 0 }
+		#		spriteType = "GFX_wacky_shots_vid"
+		#		scripted = yes
+		#	}
+		#	guiButtonType = {
+		#		name = "we_wacky_shots_close_button"
+		#		position = { x = 0 y = 0 }
+		#		quadTextureSprite ="GFX_closebutton2"
+		#		scripted = yes
+		#	}
 			
 			# Drinksmap
 		windowType = {
@@ -1090,7 +1122,8 @@ guiTypes = {
 		
 			
 			
-				# Piano:
+		
+		# Piano:
 		windowType = {
 			name = "we_piano_window"
 			backGround =""
@@ -1813,6 +1846,13 @@ guiTypes = {
 				clicksound = Ais7
 				#shortcut = "TODO"
 				scripted = yes
+			}
+			guiButtonType = {
+				name = "we_piano_close_button"
+				position = { x=0 y = 0}
+				quadTextureSprite ="GFX_closebutton2"
+				scripted = yes
+				scale = 1.2
 			}
 		}
 	} ### end of "topbar"

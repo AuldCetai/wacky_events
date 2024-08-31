@@ -7,6 +7,9 @@ custom_window = {
 	name = we_menu_window
 	potential = { has_country_flag = we_menu_is_open_already_silly }
 }
+custom_icon = {
+	name = we_menu_bg
+}
 
 
 custom_window = {
@@ -153,8 +156,27 @@ custom_button = {
 custom_button = {
 	name = we_placeholder_for_menu
   	potential = { always = yes}
-	tooltip = we_placeholder_for_menu_tt
+  	effect = { 
+		#set_country_flag = we_wacky_shots_clip_flag
+		#play_sound = wacky_shots
 	}
+	tooltip = we_placeholder_for_menu_tt
+}
+# Wacky Shots:
+#custom_window = {
+#	name = we_wacky_shots_window
+#	potential = { has_country_flag = we_wacky_shots_clip_flag }
+#}
+#custom_icon = {
+#	name = we_wacky_shots_background
+#}
+#custom_icon = {
+#	name = we_wacky_shots_clip
+#}
+#custom_button = {
+#	name = we_wacky_shots_close_button
+#  	effect = { clr_country_flag = we_wacky_shots_clip_flag }
+#}
 	
 
 custom_button = {

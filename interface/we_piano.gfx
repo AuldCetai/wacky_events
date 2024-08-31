@@ -48,4 +48,22 @@ spriteTypes = {
 		loadType = "INGAME"
 		transparencecheck = yes
 	}
+	spriteType = {
+		name = "GFX_wacky_shots_background"
+		texturefile = "gfx/whacky_interface/wacky_shots/wacky_shots_background.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	# Other:
+	frameAnimatedSpriteType = {
+		name = "GFX_wacky_shots_vid"
+		texturefile = "gfx/whacky_interface/wacky_shots/wacky_shots_vid.dds"
+		noOfFrames = 20
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 10
+		looping = no
+		play_on_show = yes
+	}
+
 }
