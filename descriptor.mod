@@ -6,4 +6,5 @@ tags={
 }
 name="Wacky Events"
 supported_version="v1.37.2.0"
-path="C:/Users/Szalámi/Documents/Paradox Interactive/Europa Universalis IV/mod/wacky_events"
+path="C:/Users/User/Documents/Paradox Interactive/Europa Universalis IV/mod/wacky_events"
+remote_file_id ="3321617164"
