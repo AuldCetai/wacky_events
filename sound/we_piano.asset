@@ -359,3 +359,73 @@ sound = {
 	name = C7
 	file = "7/C7.wav"
 }
+
+sound = {
+	name = we_drinks_mead_sound
+	file = "drinks/we_mead_sound.wav"
+}
+
+sound = {
+	name = we_drinks_sake_sound
+	file = "drinks/we_sake_sound.wav"
+}
+
+sound = {
+	name = we_drinks_port_wine_sound
+	file = "drinks/we_port_wine_sound.wav"
+}
+
+
+sound = {
+	name = we_drinks_chicha_sound
+	file = "drinks/we_chicha_sound.wav"
+}
+
+
+sound = {
+	name = we_drinks_coffee_sound
+	file = "drinks/we_coffee_sound.wav"
+}
+
+
+sound = {
+	name = we_drinks_masala_chai_sound
+	file = "drinks/we_masala_chai_sound.wav"
+}
+
+
+sound = {
+	name = we_drinks_rum_sound
+	file = "drinks/we_rum_sound.wav"
+}
+
+
+sound = {
+	name = we_drinks_kvass_sound
+	file = "drinks/we_kvass_sound.wav"
+}
+
+
+sound = {
+	name = we_drinks_pulque_sound
+	file = "drinks/we_pulque_sound.wav"
+}
+
+
+sound = {
+	name = we_drinks_boza_sound
+	file = "drinks/we_boza_sound.wav"
+}
+
+
+sound = {
+	name = we_drinks_tiswin_sound
+	file = "drinks/we_tiswin_sound.wav"
+}
+
+
+sound = {
+	name = we_drinks_kava_sound
+	file = "drinks/we_kava_sound.wav"
+}
+

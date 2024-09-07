@@ -46,7 +46,7 @@ country_event = {
 	desc = we.002.d
 	picture = GFX_we_event_002
 	fire_only_once = yes
-	mean_time_to_happen = { months = 5000 }
+	mean_time_to_happen = { months = 480 }
 	trigger = {
 				owns = 236
 				is_in_war = {attackers = TUR}
@@ -75,7 +75,7 @@ country_event = {
 	desc = we.005.d
 	picture = GFX_we_event_005
 	fire_only_once = yes
-	mean_time_to_happen = { months = 5000 }
+	mean_time_to_happen = { months = 480 }
 	trigger = {
 				tag = JAP
 				has_global_flag = we_occasional_mystery
@@ -169,7 +169,7 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 5000
+		months = 480
 	}
 	option = {
 		name = "we.011.a"
@@ -863,6 +863,9 @@ country_event = {
 				remove_core = event_target:country_for_switching_2
 			}
 			every_owned_province = {
+				limit = {
+					has_province_flag = province_ceded_away_flag
+				}
 				add_core = ROOT
 			}
 			every_province = {
@@ -1017,7 +1020,7 @@ country_event= {
 	title = we.032.t 
 	desc = we.032.d
 	picture = GFX_we_event_032
-	mean_time_to_happen = { months = 5000 }
+	mean_time_to_happen = { months = 480 }
 	trigger = {
 				NOT = {num_of_cities = 2}
 				has_global_flag = we_here_be_dragons
