@@ -863,9 +863,6 @@ country_event = {
 				remove_core = event_target:country_for_switching_2
 			}
 			every_owned_province = {
-				limit = {
-					has_province_flag = province_ceded_away_flag
-				}
 				add_core = ROOT
 			}
 			every_province = {
